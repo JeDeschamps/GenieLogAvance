@@ -1,0 +1,2 @@
+# GenieLogAvance
+TP refactoring gildedrose
