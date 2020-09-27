@@ -4,13 +4,15 @@ com/gildedrose/Behavior.java
  com.gildedrose.Behavior
 com/gildedrose/ElixirBehavior.java
  com.gildedrose.ElixirBehavior
-com/gildedrose/AgedBrieBehavior.java
- com.gildedrose.AgedBrieBehavior
 com/gildedrose/Item.java
  com.gildedrose.Item
+com/gildedrose/AgedBrieBehavior.java
+ com.gildedrose.AgedBrieBehavior
+com/gildedrose/BackstagePassBehavior.java
+ com.gildedrose.BackstagePassBehavior
 com/gildedrose/GildedRose.java
  com.gildedrose.GildedRose
 com/gildedrose/SulfurasBehavior.java
  com.gildedrose.SulfurasBehavior
-com/gildedrose/BackstagePassBehavior.java
- com.gildedrose.BackstagePassBehavior
+com/gildedrose/BehaviorFactory.java
+ com.gildedrose.BehaviorFactory

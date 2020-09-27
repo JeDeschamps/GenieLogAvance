@@ -254,19 +254,39 @@ class GildedRoseTest {
         assertThat(testitem.items[0].quality, is(50));
     }
     @Test
-    void Try() {
+    void FactoryReturnsBackstagePassBehaviorClass() {
         Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 6, 10) };
-        BackstagePassBehavior test = new BackstagePassBehavior();
-        test.updateItemQuality(items[0]);
-        assertThat(items[0].quality, is(12));
+        Behavior behave = BehaviorFactory.getItemBehavior(items[0]);
+        assertThat(behave.getClass(), is(BackstagePassBehavior.class));
     }
 
     @Test
-    void TrySellIn() {
-        Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 3, 0) };
-        BackstagePassBehavior test = new BackstagePassBehavior();
-        test.updateItemSellIn(items[0]);
-        assertThat(items[0].sellIn, is(2));
+    void FactoryReturnsAgedBrieBehaviorClass() {
+        Item[] items = new Item[] { new Item("Aged Brie", -1, 50)  };
+        Behavior behave = BehaviorFactory.getItemBehavior(items[0]);
+        assertThat(behave.getClass(), is(AgedBrieBehavior.class));
     }
+
+    @Test
+    void FactoryReturnsDexterityVestBehaviorClass() {
+        Item[] items = new Item[] { new Item("+5 Dexterity Vest", -1, 50)  };
+        Behavior behave = BehaviorFactory.getItemBehavior(items[0]);
+        assertThat(behave.getClass(), is(DexterityVestBehavior.class));
+    }
+
+    @Test
+    void FactoryReturnsElixirBehaviorClass() {
+        Item[] items = new Item[] { new Item("Elixir of the Mongoose", 5, 7) };
+        Behavior behave = BehaviorFactory.getItemBehavior(items[0]);
+        assertThat(behave.getClass(), is(ElixirBehavior.class));
+    }
+
+    @Test
+    void FactoryReturnsSulfuraBehaviorClass() {
+        Item[] items = new Item[] { new Item("Sulfuras, Hand of Ragnaros", 0, 80), };
+        Behavior behave = BehaviorFactory.getItemBehavior(items[0]);
+        assertThat(behave.getClass(), is(SulfurasBehavior.class));
+    }
+
 }
 
