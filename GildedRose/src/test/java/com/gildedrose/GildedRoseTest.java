@@ -288,5 +288,13 @@ class GildedRoseTest {
         assertThat(behave.getClass(), is(SulfurasBehavior.class));
     }
 
+    @Test
+    void FactoryReturnsConjuredBehaviorClass() {
+        Item[] items = new Item[] { new Item("Conjured Sulfuras, Hand of Ragnaros", 0, 80), };
+        Behavior behave = BehaviorFactory.getItemBehavior(items[0]);
+        assertThat(behave.getClass(), is(ConjuredBehavior.class));
+    }
+
+
 }
 

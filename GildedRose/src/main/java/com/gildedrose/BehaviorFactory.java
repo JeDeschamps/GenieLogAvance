@@ -6,6 +6,9 @@ import com.gildedrose.Item;
 public class BehaviorFactory {
 
     public static Behavior getItemBehavior(Item it){
+        if (it.name.startsWith("Conjured "))
+            return getConjuredBehavior();
+
         switch (it.name) {
             case "+5 Dexterity Vest":
                 return getDexterityVestBehavior();
@@ -41,5 +44,8 @@ public class BehaviorFactory {
     }
     public static Behavior getSulfurasBehavior() {
         return new SulfurasBehavior();
+    }
+    public static Behavior getConjuredBehavior() {
+        return new ConjuredBehavior();
     }
 }
