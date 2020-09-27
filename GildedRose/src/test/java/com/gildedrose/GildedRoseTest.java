@@ -178,6 +178,7 @@ class GildedRoseTest {
         testitem.updateQuality();
         assertThat(testitem.items[0].quality, is(50));
     }
+
     @Test
     void BackStagePassQualityDoesntGoAbove50WhenSellInAbove10() {
         Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 15, 50) };
@@ -224,10 +225,25 @@ class GildedRoseTest {
 
     @Test
     void AgedBrieQualityDoesntGoAbove50WhenExpired() {
-        Item[] items = new Item[] { new Item("Aged Brie", 2, 49) };
+        Item[] items = new Item[] { new Item("Aged Brie", -1, 50) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
         assertThat(testitem.items[0].quality, is(50));
+    }
+    @Test
+    void Try() {
+        Item[] items = new Item[] { new Item("+5 Dexterity Vest", -1, 55)};
+        DexterityVestBehavior test = new DexterityVestBehavior();
+        test.updateItemQuality(items[0]);
+        assertThat(items[0].quality, is(53));
+    }
+
+    @Test
+    void TrySellIn() {
+        Item[] items = new Item[] { new Item("+5 Dexterity Vest", -1, 3)};
+        DexterityVestBehavior test = new DexterityVestBehavior();
+        test.updateItemSellIn(items[0]);
+        assertThat(items[0].sellIn, is(-2));
     }
 }
 

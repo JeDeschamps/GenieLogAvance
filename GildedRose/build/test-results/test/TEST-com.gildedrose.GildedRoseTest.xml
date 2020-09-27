@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="27" skipped="0" failures="0" errors="0" timestamp="2020-09-27T16:19:36" hostname="LAPTOP-7EIT0NTC" time="0.057">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="29" skipped="0" failures="0" errors="0" timestamp="2020-09-27T17:30:45" hostname="LAPTOP-7EIT0NTC" time="0.073">
   <properties/>
-  <testcase name="ElixirQualityDoesntDropUnder0WhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.026"/>
+  <testcase name="ElixirQualityDoesntDropUnder0WhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.036"/>
   <testcase name="AgedBrieQualityUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="DexterityVestQualityUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="AgedBrieQualityUpgradeWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="BackstagePassQualityUpgradeSellInUnder10Above5()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="BackstagePassQualityUpgradeSellInUnder10Above5()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="BackstagePassQualityUpgradeSellInAbove10()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="DexterityVestQualityDoesntDropUnder0WhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="AgedBrieSellInUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="DexterityVestQualityDoesntDropUnder0WhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="Try()" classname="com.gildedrose.GildedRoseTest" time="0.005"/>
+  <testcase name="AgedBrieSellInUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="ElixirSellInUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="AgedBrieQualityDoesntGoAbove50()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="AgedBrieQualityDoesntGoAbove50WhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="ElixirQualityDoesntDropUnder0()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="DexterityVestQualityDoesntDropUnder0()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="BackStagePassQualityDoesntGoAbove50WhenSellInUnder10Above5()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="ElixirQualityUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="BackStagePassQualityDoesntGoAbove50WhenSellInAbove10()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="SulfurasQualityDoesntChangeWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="SulfurasSellInDoesntChange()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="DexterityVestQualityUpgradeWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="BackstagePassQualityUpgradeSellInUnder5Above0()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="BackStagePassQualityDoesntGoAbove50WhenSellInUnder5Above0()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="BackStagePassSellInUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="DexterityVestQualityDoesntDropUnder0()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="BackStagePassQualityDoesntGoAbove50WhenSellInUnder10Above5()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="ElixirQualityUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="BackStagePassQualityDoesntGoAbove50WhenSellInAbove10()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="SulfurasQualityDoesntChangeWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="SulfurasSellInDoesntChange()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="DexterityVestQualityUpgradeWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="BackstagePassQualityUpgradeSellInUnder5Above0()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="BackStagePassQualityDoesntGoAbove50WhenSellInUnder5Above0()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="BackStagePassSellInUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="BackstagePassQualityDropsToZeroWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="ElixirQualityUpgradeWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="DexterityVestSellInUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="ElixirQualityUpgradeWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="DexterityVestSellInUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="SulfurasQualityDoesntChange()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="TrySellIn()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="BackStagePassQualityDoesntDropUnder0()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
