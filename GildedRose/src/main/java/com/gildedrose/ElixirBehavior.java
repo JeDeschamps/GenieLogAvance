@@ -2,7 +2,7 @@ package com.gildedrose;
 
 import com.gildedrose.Item;
 
-public class DexterityVestBehavior implements Behavior {
+public class ElixirBehavior implements Behavior {
     private final int MIN_QUALITY = 0;
 
 

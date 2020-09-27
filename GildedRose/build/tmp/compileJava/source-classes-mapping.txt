@@ -1,8 +1,16 @@
+com/gildedrose/DexterityVestBehavior.java
+ com.gildedrose.DexterityVestBehavior
+com/gildedrose/Behavior.java
+ com.gildedrose.Behavior
+com/gildedrose/ElixirBehavior.java
+ com.gildedrose.ElixirBehavior
+com/gildedrose/AgedBrieBehavior.java
+ com.gildedrose.AgedBrieBehavior
 com/gildedrose/Item.java
  com.gildedrose.Item
 com/gildedrose/GildedRose.java
  com.gildedrose.GildedRose
-com/gildedrose/Behavior.java
- com.gildedrose.Behavior
-com/gildedrose/DexterityVestBehavior.java
- com.gildedrose.DexterityVestBehavior
+com/gildedrose/SulfurasBehavior.java
+ com.gildedrose.SulfurasBehavior
+com/gildedrose/BackstagePassBehavior.java
+ com.gildedrose.BackstagePassBehavior

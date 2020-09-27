@@ -24,6 +24,13 @@ class GildedRoseTest {
     }
 
     @Test
+    void QualityUpgradeWhenNegativeQualityHasNoEffect() {
+        Item[] items = new Item[] { new Item("Elixir of the Mongoose", 5, -5) };
+        GildedRose testitem = new GildedRose(items);
+        testitem.updateQuality();
+        assertThat(testitem.items[0].quality, is(-5));
+    }
+    @Test
     void AgedBrieQualityUpgrade() {
         Item[] items = new Item[] { new Item("Aged Brie", 2, 0) };
         GildedRose testitem = new GildedRose(items);
@@ -33,10 +40,10 @@ class GildedRoseTest {
     
     @Test
     void SulfurasQualityDoesntChange() {
-        Item[] items = new Item[] { new Item("Sulfuras, Hand of Ragnaros", 0, 80) };
+        Item[] items = new Item[] { new Item("Sulfuras, Hand of Ragnaros", 0, 50) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
-        assertThat(testitem.items[0].quality, is(80));
+        assertThat(testitem.items[0].quality, is(50));
     }
 
     @Test
@@ -169,6 +176,14 @@ class GildedRoseTest {
         assertThat(testitem.items[0].quality, is(0));
     }
 
+    @Test
+    void BackStagePassQualityEquals0WhenExpired() {
+        Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", -2, -10) };
+        GildedRose testitem = new GildedRose(items);
+        testitem.updateQuality();
+        assertThat(testitem.items[0].quality, is(0));
+    }
+
     /* Qualite ne depasse pas les 50 quand l'item n'est pas perime */
 
     @Test
@@ -177,6 +192,14 @@ class GildedRoseTest {
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
         assertThat(testitem.items[0].quality, is(50));
+    }
+
+    @Test
+    void AgedBrieQualityIncrementsWhenQualityUnder0() {
+        Item[] items = new Item[] { new Item("Aged Brie", 2, -2) };
+        GildedRose testitem = new GildedRose(items);
+        testitem.updateQuality();
+        assertThat(testitem.items[0].quality, is(-1));
     }
 
     @Test
@@ -232,18 +255,18 @@ class GildedRoseTest {
     }
     @Test
     void Try() {
-        Item[] items = new Item[] { new Item("+5 Dexterity Vest", -1, 55)};
-        DexterityVestBehavior test = new DexterityVestBehavior();
+        Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 6, 10) };
+        BackstagePassBehavior test = new BackstagePassBehavior();
         test.updateItemQuality(items[0]);
-        assertThat(items[0].quality, is(53));
+        assertThat(items[0].quality, is(12));
     }
 
     @Test
     void TrySellIn() {
-        Item[] items = new Item[] { new Item("+5 Dexterity Vest", -1, 3)};
-        DexterityVestBehavior test = new DexterityVestBehavior();
+        Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 3, 0) };
+        BackstagePassBehavior test = new BackstagePassBehavior();
         test.updateItemSellIn(items[0]);
-        assertThat(items[0].sellIn, is(-2));
+        assertThat(items[0].sellIn, is(2));
     }
 }
 
