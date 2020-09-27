@@ -5,45 +5,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 class GildedRoseTest {
-
-    /*Item[] itemsBaseRef = new Item[] {
-        new Item("+5 Dexterity Vest", 10, 20), //
-        new Item("Aged Brie", 2, 0), //
-        new Item("Elixir of the Mongoose", 5, 7), //
-        new Item("Sulfuras, Hand of Ragnaros", 0, 80), //
-        new Item("Sulfuras, Hand of Ragnaros", -1, 80),
-        new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20),
-        new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49),
-        new Item("Backstage passes to a TAFKAL80ETC concert", 5, 49)};
-
-    Item[] itemsLookUpRef = new Item[] {
-            new Item("+5 Dexterity Vest", 10, 20), //
-            new Item("Aged Brie", 2, 0), //
-            new Item("Elixir of the Mongoose", 5, 7), //
-            new Item("Sulfuras, Hand of Ragnaros", 0, 80), //
-            new Item("Sulfuras, Hand of Ragnaros", -1, 80),
-            new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20),
-            new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49),
-            new Item("Backstage passes to a TAFKAL80ETC concert", 5, 49)};
-        
-
-    @Test 
-    void nonRegression()
-    {
-        OldGildedRose ref = new OldGildedRose(itemsBaseRef);
-        GildedRose checkNonRegression = new GildedRose(itemsLookUpRef);
-        for (int i = 0; i < 7; i++)
-        {
-            ref.updateQuality();
-            checkNonRegression.updateQuality();
-            for (int j = 0; j < itemsBaseRef.length; j++)
-            {
-                assertThat(ref.items[j].quality, is(checkNonRegression.items[j].quality));
-            }
-        }
-    } */
     
-    /* Tests de bonne dÃ©gradation de la qualitÃ© pour chaque items */
+    /* Tests de bonne degradation de la qualite pour chaque items */
     @Test
     void DexterityVestQualityUpgrade() {
         Item[] items = new Item[] { new Item("+5 Dexterity Vest", 10, 20) };
@@ -140,7 +103,7 @@ class GildedRoseTest {
         assertThat(testitem.items[0].quality, is(80));
     }
 
-    /* Test de dÃ©gradation du SellIn */
+    /* Test de degradation du SellIn */
     @Test
     void AgedBrieSellInUpgrade() {
         Item[] items = new Item[] { new Item("Aged Brie", 5, 0) };
@@ -181,7 +144,7 @@ class GildedRoseTest {
         assertThat(testitem.items[0].sellIn, is(0));
     }
 
-    /* QualitÃ© ne passe pas en dessous de 0 quand l'item n'est pas pÃ©rimÃ© */
+    /* Qualite ne passe pas en dessous de 0 quand l'item n'est pas perime */
     @Test
     void DexterityVestQualityDoesntDropUnder0() {
         Item[] items = new Item[] { new Item("+5 Dexterity Vest", 10, 0) };
@@ -206,7 +169,7 @@ class GildedRoseTest {
         assertThat(testitem.items[0].quality, is(0));
     }
 
-    /* QualitÃ© ne dÃ©passe pas les 50 quand l'item n'est pas pÃ©rimÃ© */
+    /* Qualite ne depasse pas les 50 quand l'item n'est pas perime */
 
     @Test
     void AgedBrieQualityDoesntGoAbove50() {
@@ -239,7 +202,7 @@ class GildedRoseTest {
         assertThat(testitem.items[0].quality, is(50));
     }
     
-    /* QualitÃ© ne passe pas en dessous de 0 quand l'item est pÃ©rimÃ© */
+    /* Qualite ne passe pas en dessous de 0 quand l'item est perime */
     @Test
     void DexterityVestQualityDoesntDropUnder0WhenExpired() {
         Item[] items = new Item[] { new Item("+5 Dexterity Vest", -1, 1) };
@@ -257,7 +220,7 @@ class GildedRoseTest {
     }
 
 
-    /* QualitÃ© ne dÃ©passe pas les 50 quand l'item est pÃ©rimÃ© */
+    /* Qualite ne depasse pas les 50 quand l'item est perime */
 
     @Test
     void AgedBrieQualityDoesntGoAbove50WhenExpired() {
