@@ -3,44 +3,50 @@
 import com.gildedrose.AgedBrieBehavior;
 import com.gildedrose.Item;
 
-<span class="nc" id="L6">public class BehaviorFactory {</span>
+<span class="fc" id="L6">public class BehaviorFactory {</span>
 
     public static Behavior getItemBehavior(Item it){
-<span class="pc bpc" id="L9" title="1 of 6 branches missed.">        switch (it.name) {</span>
+<span class="fc bfc" id="L9" title="All 2 branches covered.">        if (it.name.startsWith(&quot;Conjured &quot;))</span>
+<span class="fc" id="L10">            return getConjuredBehavior();</span>
+
+<span class="fc bfc" id="L12" title="All 6 branches covered.">        switch (it.name) {</span>
             case &quot;+5 Dexterity Vest&quot;:
-<span class="fc" id="L11">                return getDexterityVestBehavior();</span>
+<span class="fc" id="L14">                return getDexterityVestBehavior();</span>
 
             case &quot;Aged Brie&quot;:
-<span class="fc" id="L14">                return getAgedBrieBehavior();</span>
+<span class="fc" id="L17">                return getAgedBrieBehavior();</span>
             
             case &quot;Elixir of the Mongoose&quot;:
-<span class="fc" id="L17">                return getElixirBehavior();</span>
+<span class="fc" id="L20">                return getElixirBehavior();</span>
             
             case &quot;Sulfuras, Hand of Ragnaros&quot;:
-<span class="fc" id="L20">                return getSulfurasBehavior();</span>
+<span class="fc" id="L23">                return getSulfurasBehavior();</span>
 
             case &quot;Backstage passes to a TAFKAL80ETC concert&quot;:
-<span class="fc" id="L23">                return getBackstagePassBehavior();</span>
+<span class="fc" id="L26">                return getBackstagePassBehavior();</span>
             default:
                 break;
         }
-<span class="nc" id="L27">        return null;</span>
+<span class="fc" id="L30">        return getElixirBehavior();</span>
     }
 
     public static Behavior getAgedBrieBehavior() {
-<span class="fc" id="L31">        return new AgedBrieBehavior();</span>
+<span class="fc" id="L34">        return new AgedBrieBehavior();</span>
     }
     public static Behavior getBackstagePassBehavior() {
-<span class="fc" id="L34">        return new BackstagePassBehavior();</span>
+<span class="fc" id="L37">        return new BackstagePassBehavior();</span>
     }
     public static Behavior getDexterityVestBehavior() {
-<span class="fc" id="L37">        return new DexterityVestBehavior();</span>
+<span class="fc" id="L40">        return new DexterityVestBehavior();</span>
     }
     public static Behavior getElixirBehavior() {
-<span class="fc" id="L40">        return new ElixirBehavior();</span>
+<span class="fc" id="L43">        return new ElixirBehavior();</span>
     }
     public static Behavior getSulfurasBehavior() {
-<span class="fc" id="L43">        return new SulfurasBehavior();</span>
+<span class="fc" id="L46">        return new SulfurasBehavior();</span>
+    }
+    public static Behavior getConjuredBehavior() {
+<span class="fc" id="L49">        return new ConjuredBehavior();</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

@@ -8,8 +8,8 @@ class GildedRose {
 <span class="fc" id="L8">    }</span>
 
     public void updateQuality() {
-<span class="fc bfc" id="L11" title="All 2 branches covered.">        for (int i = 0; i &lt; items.length; i++) {</span>
-<span class="fc" id="L12">            this.items[i].updateQualityForItem();</span>
+<span class="fc bfc" id="L11" title="All 2 branches covered.">        for (Item it : this.items) {</span>
+<span class="fc" id="L12">            it.updateQualityForItem();</span>
         }
 <span class="fc" id="L14">    }</span>
 }

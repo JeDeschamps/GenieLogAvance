@@ -27,7 +27,7 @@ public class BehaviorFactory {
             default:
                 break;
         }
-        return null;
+        return getElixirBehavior();
     }
 
     public static Behavior getAgedBrieBehavior() {

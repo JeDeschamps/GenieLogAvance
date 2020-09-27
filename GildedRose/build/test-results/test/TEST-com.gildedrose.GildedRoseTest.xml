@@ -1,92 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="36" skipped="0" failures="1" errors="0" timestamp="2020-09-27T20:17:40" hostname="LAPTOP-7EIT0NTC" time="0.076">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="50" skipped="0" failures="0" errors="0" timestamp="2020-09-27T21:27:23" hostname="LAPTOP-7EIT0NTC" time="0.086">
   <properties/>
-  <testcase name="ElixirQualityDoesntDropUnder0WhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.024"/>
-  <testcase name="AgedBrieQualityUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="ElixirQualityDoesntDropUnder0WhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.03"/>
+  <testcase name="ConjuredDexterityVestQualityUpgradeWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.004"/>
+  <testcase name="ConjuredBackstagePassQualityUpgradeSellInUnder5Above0CapsAt50()" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="AgedBrieQualityUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
   <testcase name="DexterityVestQualityUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="FactoryReturnsElixirBehaviorClass()" classname="com.gildedrose.GildedRoseTest" time="0.006"/>
-  <testcase name="AgedBrieQualityUpgradeWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="BackstagePassQualityUpgradeSellInUnder10Above5()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="FactoryReturnsSulfuraBehaviorClass()" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
-  <testcase name="FactoryReturnsConjuredBehaviorClass()" classname="com.gildedrose.GildedRoseTest" time="0.008">
-    <failure message="java.lang.AssertionError: &#10;Expected: is &lt;class com.gildedrose.SulfurasBehavior&gt;&#10;     but: was &lt;class com.gildedrose.ConjuredBehavior&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: is &lt;class com.gildedrose.SulfurasBehavior&gt;
-     but: was &lt;class com.gildedrose.ConjuredBehavior&gt;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at com.gildedrose.GildedRoseTest.FactoryReturnsConjuredBehaviorClass(GildedRoseTest.java:295)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:515)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:171)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:167)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:114)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:59)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:105)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
-	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
-	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy5.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</failure>
-  </testcase>
-  <testcase name="FactoryReturnsAgedBrieBehaviorClass()" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
-  <testcase name="BackstagePassQualityUpgradeSellInAbove10()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="DexterityVestQualityDoesntDropUnder0WhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="ConjuredBackstagePassQualityUpgradeSellInUnder5Above0()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="ConjuredSulfurasQualityUpgradeWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="ConjuredDexterityVestQualityUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="FactoryReturnsElixirBehaviorClass()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="ConjuredBackstagePassQualityUpgradeSellInAbove10()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="AgedBrieQualityUpgradeWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="BackstagePassQualityUpgradeSellInUnder10Above5()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="ConjuredElixirQualityUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="FactoryReturnsSulfuraBehaviorClass()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="FactoryReturnsConjuredBehaviorClass()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="BehaviorFactoryClass()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="FactoryReturnsAgedBrieBehaviorClass()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="BackstagePassQualityUpgradeSellInAbove10()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="FactoryReturnsDefaultBehaviorIfItemDoesntExist()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="ConjuredAgedBrieQualityUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="DexterityVestQualityDoesntDropUnder0WhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="AgedBrieSellInUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="FactoryReturnsBackstagePassBehaviorClass()" classname="com.gildedrose.GildedRoseTest" time="0.003"/>
+  <testcase name="FactoryReturnsBackstagePassBehaviorClass()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="AgedBrieQualityIncrementsWhenQualityUnder0()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="ConjuredSulfurasQualityUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="ElixirSellInUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="AgedBrieQualityDoesntGoAbove50()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="AgedBrieQualityDoesntGoAbove50WhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
@@ -94,20 +33,23 @@ Expected: is &lt;class com.gildedrose.SulfurasBehavior&gt;
   <testcase name="DexterityVestQualityDoesntDropUnder0()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="BackStagePassQualityDoesntGoAbove50WhenSellInUnder10Above5()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="ElixirQualityUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="BackStagePassQualityEquals0WhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="BackStagePassQualityDoesntGoAbove50WhenSellInAbove10()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="SulfurasQualityDoesntChangeWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="FactoryReturnsDexterityVestBehaviorClass()" classname="com.gildedrose.GildedRoseTest" time="0.003"/>
-  <testcase name="QualityUpgradeWhenNegativeQualityHasNoEffect()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="SulfurasSellInDoesntChange()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="BackStagePassQualityEquals0WhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="BackStagePassQualityDoesntGoAbove50WhenSellInAbove10()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="SulfurasQualityDoesntChangeWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="FactoryReturnsDexterityVestBehaviorClass()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="QualityUpgradeWhenNegativeQualityHasNoEffect()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="SulfurasSellInDoesntChange()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="DexterityVestQualityUpgradeWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="BackstagePassQualityUpgradeSellInUnder5Above0()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="BackStagePassQualityDoesntGoAbove50WhenSellInUnder5Above0()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="BackstagePassQualityUpgradeSellInUnder5Above0()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="toStringReturnsString()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="BackStagePassQualityDoesntGoAbove50WhenSellInUnder5Above0()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="BackStagePassSellInUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="BackstagePassQualityDropsToZeroWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="ElixirQualityUpgradeWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="DexterityVestSellInUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="ConjuredBackstagePassQualityUpgradeSellInUnder10Above5()" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="ElixirQualityUpgradeWhenExpired()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="DexterityVestSellInUpgrade()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="SulfurasQualityDoesntChange()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="AgedBrieQualityUpgradeWhenExpiredCapsAt50()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="BackStagePassQualityDoesntDropUnder0()" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

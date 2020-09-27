@@ -16,58 +16,13 @@ public class Item {
 
    @Override
    public String toString() {
-<span class="nc" id="L19">        return this.name + &quot;, &quot; + this.sellIn + &quot;, &quot; + this.quality;</span>
+<span class="fc" id="L19">        return this.name + &quot;, &quot; + this.sellIn + &quot;, &quot; + this.quality;</span>
     }
 
     public void updateQualityForItem() {
-<span class="fc bfc" id="L23" title="All 2 branches covered.">        if (!this.name.equals(&quot;Aged Brie&quot;)</span>
-<span class="fc bfc" id="L24" title="All 2 branches covered.">                    &amp;&amp; !this.name.equals(&quot;Backstage passes to a TAFKAL80ETC concert&quot;)) {</span>
-<span class="fc bfc" id="L25" title="All 2 branches covered.">                if (this.quality &gt; 0) {</span>
-<span class="fc bfc" id="L26" title="All 2 branches covered.">                    if (!this.name.equals(&quot;Sulfuras, Hand of Ragnaros&quot;)) {</span>
-<span class="fc" id="L27">                        this.quality = this.quality - 1;</span>
-                    }
-                }
-            } else {
-<span class="fc bfc" id="L31" title="All 2 branches covered.">                if (this.quality &lt; 50) {</span>
-<span class="fc" id="L32">                    this.quality = this.quality + 1;</span>
-
-<span class="fc bfc" id="L34" title="All 2 branches covered.">                    if (this.name.equals(&quot;Backstage passes to a TAFKAL80ETC concert&quot;)) {</span>
-<span class="fc bfc" id="L35" title="All 2 branches covered.">                        if (this.sellIn &lt; 11) {</span>
-<span class="fc bfc" id="L36" title="All 2 branches covered.">                            if (this.quality &lt; 50) {</span>
-<span class="fc" id="L37">                                this.quality = this.quality + 1;</span>
-                            }
-                        }
-
-<span class="fc bfc" id="L41" title="All 2 branches covered.">                        if (this.sellIn &lt; 6) {</span>
-<span class="fc bfc" id="L42" title="All 2 branches covered.">                            if (this.quality &lt; 50) {</span>
-<span class="fc" id="L43">                                this.quality = this.quality + 1;</span>
-                            }
-                        }
-                    }
-                }
-            }
-
-<span class="fc bfc" id="L50" title="All 2 branches covered.">            if (!this.name.equals(&quot;Sulfuras, Hand of Ragnaros&quot;)) {</span>
-<span class="fc" id="L51">                this.sellIn = this.sellIn - 1;</span>
-            }
-
-<span class="fc bfc" id="L54" title="All 2 branches covered.">            if (this.sellIn &lt; 0) {</span>
-<span class="fc bfc" id="L55" title="All 2 branches covered.">                if (!this.name.equals(&quot;Aged Brie&quot;)) {</span>
-<span class="fc bfc" id="L56" title="All 2 branches covered.">                    if (!this.name.equals(&quot;Backstage passes to a TAFKAL80ETC concert&quot;)) {</span>
-<span class="fc bfc" id="L57" title="All 2 branches covered.">                        if (this.quality &gt; 0) {</span>
-<span class="fc bfc" id="L58" title="All 2 branches covered.">                            if (!this.name.equals(&quot;Sulfuras, Hand of Ragnaros&quot;)) {</span>
-<span class="fc" id="L59">                                this.quality = this.quality - 1;</span>
-                            }
-                        }
-                    } else {
-<span class="fc" id="L63">                        this.quality = this.quality - this.quality;</span>
-                    }
-                } else {
-<span class="fc bfc" id="L66" title="All 2 branches covered.">                    if (this.quality &lt; 50) {</span>
-<span class="fc" id="L67">                        this.quality = this.quality + 1;</span>
-                    }
-                }
-            }
-<span class="fc" id="L71">    }</span>
+<span class="fc" id="L23">        Behavior itemBehavior = BehaviorFactory.getItemBehavior(this);</span>
+<span class="fc" id="L24">        itemBehavior.updateItemQuality(this);</span>
+<span class="fc" id="L25">        itemBehavior.updateItemSellIn(this);</span>
+<span class="fc" id="L26">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

@@ -8,7 +8,8 @@ public class ConjuredBehavior implements Behavior {
     private Behavior normalItemBehavior;
 
     public void updateItemQuality(Item it){ 
-        it.name.replace("Conjured ","");
+        String str = it.name.replace("Conjured ","");
+        it.name = str;
         Behavior normalBehavior = BehaviorFactory.getItemBehavior(it);
         normalBehavior.updateItemQuality(it);
         normalBehavior.updateItemQuality(it);
