@@ -6,24 +6,24 @@ import com.gildedrose.Item;
 public class BehaviorFactory {
 
     public static Behavior getItemBehavior(Item it){
-        if (it.name.startsWith("Conjured "))
-            return getConjuredBehavior();
-
-        switch (it.name) {
-            case "+5 Dexterity Vest":
+        String str = it.name.substring(0, 8);
+        switch (str) {
+            case "+5 Dexte":
                 return getDexterityVestBehavior();
 
-            case "Aged Brie":
+            case "Aged Bri":
                 return getAgedBrieBehavior();
             
-            case "Elixir of the Mongoose":
+            case "Elixir o":
                 return getElixirBehavior();
             
-            case "Sulfuras, Hand of Ragnaros":
+            case "Sulfuras":
                 return getSulfurasBehavior();
 
-            case "Backstage passes to a TAFKAL80ETC concert":
+            case "Backstag":
                 return getBackstagePassBehavior();
+            case "Conjured":
+                return getConjuredBehavior();
             default:
                 break;
         }

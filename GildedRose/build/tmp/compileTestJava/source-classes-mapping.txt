@@ -1,14 +1,14 @@
-com/gildedrose/TexttestFixture.java
- com.gildedrose.TexttestFixture
-com/gildedrose/ConjuredTest.java
- com.gildedrose.ConjuredTest
-com/gildedrose/ClassInstantiationTest.java
- com.gildedrose.ClassInstantiationTest
 com/gildedrose/SellInLossTest.java
  com.gildedrose.SellInLossTest
+com/gildedrose/TexttestFixture.java
+ com.gildedrose.TexttestFixture
 com/gildedrose/NormalDegradationTest.java
  com.gildedrose.NormalDegradationTest
 com/gildedrose/QualityBoundariesTest.java
  com.gildedrose.QualityBoundariesTest
+com/gildedrose/ClassInstantiationTest.java
+ com.gildedrose.ClassInstantiationTest
+com/gildedrose/ConjuredTest.java
+ com.gildedrose.ConjuredTest
 com/gildedrose/ExpiredDegradationTest.java
  com.gildedrose.ExpiredDegradationTest
