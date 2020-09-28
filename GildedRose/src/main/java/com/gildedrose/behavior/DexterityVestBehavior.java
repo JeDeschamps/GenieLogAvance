@@ -7,11 +7,11 @@ public class DexterityVestBehavior implements Behavior {
 
 
     public void updateItemQuality(Item it){ 
-        if (it.quality > MIN_QUALITY)
+        if (it.getQuality() > MIN_QUALITY)
         {
-            it.quality = it.quality - 1;
-            if(it.quality > MIN_QUALITY && isExpired(it))
-                it.quality = it.quality - 1;
+            it.setQuality(it.getQuality() - 1);
+            if(it.getQuality() > MIN_QUALITY && isExpired(it))
+                it.setQuality(it.getQuality() - 1);
         }
     }
 }

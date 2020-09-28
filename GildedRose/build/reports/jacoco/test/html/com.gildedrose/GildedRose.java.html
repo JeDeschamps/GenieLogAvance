@@ -9,8 +9,13 @@ class GildedRose {
 
     public void updateQuality() {
 <span class="fc bfc" id="L11" title="All 2 branches covered.">        for (Item it : this.items) {</span>
-<span class="fc" id="L12">            it.updateQualityForItem();</span>
+<span class="fc" id="L12">            updateQualityForItem(it);</span>
         }
 <span class="fc" id="L14">    }</span>
+    public void updateQualityForItem(Item it) {
+<span class="fc" id="L16">        Behavior itemBehavior = BehaviorFactory.getItemBehavior(it);</span>
+<span class="fc" id="L17">        itemBehavior.updateItemQuality(it);</span>
+<span class="fc" id="L18">        itemBehavior.updateItemSellIn(it);</span>
+<span class="fc" id="L19">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

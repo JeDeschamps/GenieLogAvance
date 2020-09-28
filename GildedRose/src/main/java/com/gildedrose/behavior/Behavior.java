@@ -6,13 +6,13 @@ public interface Behavior {
     void updateItemQuality(Item it);
 
     default void updateItemSellIn(Item it){
-        if(!it.name.equals("Sulfuras, Hand of Ragnaros"))
+        if(!it.getName().equals("Sulfuras, Hand of Ragnaros"))
         {
-            it.sellIn = it.sellIn - 1;
+            it.setSellIn(it.getSellIn()-1);
         }
     }
 
     default public boolean isExpired(Item it){
-        return (it.sellIn <= 0);
+        return (it.getSellIn() <= 0);
     }
 }

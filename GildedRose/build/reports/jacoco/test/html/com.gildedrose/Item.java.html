@@ -19,10 +19,28 @@ public class Item {
 <span class="fc" id="L19">        return this.name + &quot;, &quot; + this.sellIn + &quot;, &quot; + this.quality;</span>
     }
 
-    public void updateQualityForItem() {
-<span class="fc" id="L23">        Behavior itemBehavior = BehaviorFactory.getItemBehavior(this);</span>
-<span class="fc" id="L24">        itemBehavior.updateItemQuality(this);</span>
-<span class="fc" id="L25">        itemBehavior.updateItemSellIn(this);</span>
-<span class="fc" id="L26">    }</span>
+    public String getName(){
+<span class="fc" id="L23">        return this.name;</span>
+    }
+
+    public int getSellIn(){
+<span class="fc" id="L27">        return this.sellIn;</span>
+    }
+
+    public int getQuality(){
+<span class="fc" id="L31">        return this.quality;</span>
+    }
+
+    public void setName(String newName){
+<span class="fc" id="L35">        this.name = newName;</span>
+<span class="fc" id="L36">    }</span>
+
+    public void setSellIn(int newSellIn){
+<span class="fc" id="L39">        this.sellIn = newSellIn;</span>
+<span class="fc" id="L40">    }</span>
+
+    public void setQuality(int newQuality){
+<span class="fc" id="L43">        this.quality = newQuality;</span>
+<span class="fc" id="L44">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

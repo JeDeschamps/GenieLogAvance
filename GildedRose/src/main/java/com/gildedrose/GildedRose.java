@@ -9,7 +9,12 @@ class GildedRose {
 
     public void updateQuality() {
         for (Item it : this.items) {
-            it.updateQualityForItem();
+            updateQualityForItem(it);
         }
+    }
+    public void updateQualityForItem(Item it) {
+        Behavior itemBehavior = BehaviorFactory.getItemBehavior(it);
+        itemBehavior.updateItemQuality(it);
+        itemBehavior.updateItemSellIn(it);
     }
 }

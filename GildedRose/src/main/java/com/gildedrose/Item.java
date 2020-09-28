@@ -19,9 +19,27 @@ public class Item {
         return this.name + ", " + this.sellIn + ", " + this.quality;
     }
 
-    public void updateQualityForItem() {
-        Behavior itemBehavior = BehaviorFactory.getItemBehavior(this);
-        itemBehavior.updateItemQuality(this);
-        itemBehavior.updateItemSellIn(this);
+    public String getName(){
+        return this.name;
+    }
+
+    public int getSellIn(){
+        return this.sellIn;
+    }
+
+    public int getQuality(){
+        return this.quality;
+    }
+
+    public void setName(String newName){
+        this.name = newName;
+    }
+
+    public void setSellIn(int newSellIn){
+        this.sellIn = newSellIn;
+    }
+
+    public void setQuality(int newQuality){
+        this.quality = newQuality;
     }
 }

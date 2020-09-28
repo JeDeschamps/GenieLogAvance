@@ -6,7 +6,7 @@ import com.gildedrose.Item;
 public class BehaviorFactory {
 
     public static Behavior getItemBehavior(Item it){
-        String str = it.name.substring(0, 8);
+        String str = it.getName().substring(0, 8);
         switch (str) {
             case "+5 Dexte":
                 return getDexterityVestBehavior();

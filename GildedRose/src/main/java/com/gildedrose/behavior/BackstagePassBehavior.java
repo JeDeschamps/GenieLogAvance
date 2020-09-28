@@ -13,13 +13,13 @@ public class BackstagePassBehavior implements Behavior {
 
 
     public void updateItemQuality(Item it){ 
-        int increase = (it.sellIn <= DAYS_REMAINING_10 ? (it.sellIn <= DAYS_REMAINING_5 ? UPGRADE_DAYS_UNDER_5 : UPGRADE_DAYS_UNDER_10) : NORMAL_UPGRADE);
+        int increase = (it.getSellIn() <= DAYS_REMAINING_10 ? (it.getSellIn() <= DAYS_REMAINING_5 ? UPGRADE_DAYS_UNDER_5 : UPGRADE_DAYS_UNDER_10) : NORMAL_UPGRADE);
         if (isExpired(it)){
-            it.quality = 0;
+            it.setQuality(0);
         }
         else {
-            it.quality = (it.quality + increase) > MAX_QUALITY ? 50 : it.quality + increase;
-            
+            int tmp = (it.getQuality() + increase) > MAX_QUALITY ? 50 : it.getQuality() + increase;
+            it.setQuality(tmp);
         }
     }
 }

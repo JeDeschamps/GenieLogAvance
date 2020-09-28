@@ -1,20 +1,20 @@
-com/gildedrose/behavior/DexterityVestBehavior.java
- com.gildedrose.DexterityVestBehavior
+com/gildedrose/conjured/ConjuredBehavior.java
+ com.gildedrose.ConjuredBehavior
 com/gildedrose/behavior/Behavior.java
  com.gildedrose.Behavior
-com/gildedrose/GildedRose.java
- com.gildedrose.GildedRose
+com/gildedrose/Item.java
+ com.gildedrose.Item
 com/gildedrose/behavior/SulfurasBehavior.java
  com.gildedrose.SulfurasBehavior
 com/gildedrose/behavior/AgedBrieBehavior.java
  com.gildedrose.AgedBrieBehavior
 com/gildedrose/behavior/BackstagePassBehavior.java
  com.gildedrose.BackstagePassBehavior
-com/gildedrose/behavior/ElixirBehavior.java
- com.gildedrose.ElixirBehavior
+com/gildedrose/behavior/DexterityVestBehavior.java
+ com.gildedrose.DexterityVestBehavior
+com/gildedrose/GildedRose.java
+ com.gildedrose.GildedRose
 com/gildedrose/behavior/BehaviorFactory.java
  com.gildedrose.BehaviorFactory
-com/gildedrose/Item.java
- com.gildedrose.Item
-com/gildedrose/conjured/ConjuredBehavior.java
- com.gildedrose.ConjuredBehavior
+com/gildedrose/behavior/ElixirBehavior.java
+ com.gildedrose.ElixirBehavior

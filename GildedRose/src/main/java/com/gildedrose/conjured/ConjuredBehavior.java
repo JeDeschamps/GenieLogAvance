@@ -5,14 +5,13 @@ import com.gildedrose.Item;
 
 
 public class ConjuredBehavior implements Behavior {
-    private Behavior normalItemBehavior;
 
     public void updateItemQuality(Item it){ 
-        String str = it.name.replace("Conjured ","");
-        it.name = str;
+        String str = it.getName().replace("Conjured ","");
+        it.setName(str);
         Behavior normalBehavior = BehaviorFactory.getItemBehavior(it);
         normalBehavior.updateItemQuality(it);
         normalBehavior.updateItemQuality(it);
-        it.name = "Conjured " + it.name;
+        it.setName("Conjured " + it.getName());
     }
 }
