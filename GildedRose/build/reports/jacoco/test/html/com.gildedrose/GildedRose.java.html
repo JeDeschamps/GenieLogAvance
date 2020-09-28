@@ -1,21 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GildedRose.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">gilded-rose-kata</a> &gt; <a href="index.source.html" class="el_package">com.gildedrose</a> &gt; <span class="el_source">GildedRose.java</span></div><h1>GildedRose.java</h1><pre class="source lang-java linenums">package com.gildedrose;
 
+/** 
+ * Classe representant la taverne, 1 attribut :
+ *  - Tableau d'items
+ * 
+ * Va effectuer les operations de mise a jour de qualite et de sellIn sur tous ses items
+ * 
+ * @see Item
+ * @see Behavior
+ * @see BehaviorFactory
+ * 
+ * @version 2.0
+ */
+
 class GildedRose {
+    /**
+     * Collection des items de la taverne
+     * Mise a jour de leurs valeurs dans les méthodes
+     * 
+     * @see GIldedRose#updateQualityForItem
+     * @see Behavior
+     */
     Item[] items;
 
-<span class="fc" id="L6">    public GildedRose(Item[] items) {</span>
-<span class="fc" id="L7">        this.items = items;</span>
-<span class="fc" id="L8">    }</span>
-
+    /**
+     * Constructeur de GildedRose
+     * 
+     * @see GildedRose#items
+     * 
+     * @param items
+     */
+<span class="fc" id="L33">    public GildedRose(Item[] items) {</span>
+<span class="fc" id="L34">        this.items = items;</span>
+<span class="fc" id="L35">    }</span>
+    
+    /**
+     * Mise a jour de la collection d'objet 
+     * Fait selon le comportement approprie a l'objet
+     * 
+     * @see Item
+     * @see GildedRose#updateQualityForItem(Item)
+     * 
+     * @param Rien, sur l'attribut de la classe
+     * @return Rien, met a jour la collection
+     */
     public void updateQuality() {
-<span class="fc bfc" id="L11" title="All 2 branches covered.">        for (Item it : this.items) {</span>
-<span class="fc" id="L12">            updateQualityForItem(it);</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">        for (Item it : this.items) {</span>
+<span class="fc" id="L49">            updateQualityForItem(it);</span>
         }
-<span class="fc" id="L14">    }</span>
+<span class="fc" id="L51">    }</span>
+
+    /**
+     * Mise a jour des valeurs sellIn et quality de l'objet 
+     * 
+     * @see Item
+     * @see Behavior
+     * @see BehaviorFactory
+     * 
+     * @param item
+     * @return rien, modification des valeurs de l'item
+     */
     public void updateQualityForItem(Item it) {
-<span class="fc" id="L16">        Behavior itemBehavior = BehaviorFactory.getItemBehavior(it);</span>
-<span class="fc" id="L17">        itemBehavior.updateItemQuality(it);</span>
-<span class="fc" id="L18">        itemBehavior.updateItemSellIn(it);</span>
-<span class="fc" id="L19">    }</span>
+<span class="fc" id="L64">        Behavior itemBehavior = BehaviorFactory.getItemBehavior(it);</span>
+<span class="fc" id="L65">        itemBehavior.updateItemQuality(it);</span>
+<span class="fc" id="L66">        itemBehavior.updateItemSellIn(it);</span>
+<span class="fc" id="L67">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

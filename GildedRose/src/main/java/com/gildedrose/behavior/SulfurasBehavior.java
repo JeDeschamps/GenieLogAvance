@@ -1,9 +1,9 @@
 package com.gildedrose; 
 
 /**
- * Classe implémentant le comportement particulier de dégradation de l'item légendaire Sulfuras 
+ * Classe implementant le comportement particulier de degradation de l'item legendaire Sulfuras 
  * 
- * L'item est considéré comme n'ayant pas sellIn et une qualité qui ne se dégrade pas
+ * L'item est considere comme n'ayant pas sellIn et une qualite qui ne se degrade pas
  * 
  * @see Item
  * @see Behavior
@@ -13,8 +13,8 @@ package com.gildedrose;
 public class SulfurasBehavior implements Behavior {
 
     /**
-     * Les méthodes d'update pour l'item
-     * Méthodes vides
+     * Les methodes d'update pour l'item
+     * Methodes vides
      * 
      * @see Item
      * @see Behavior

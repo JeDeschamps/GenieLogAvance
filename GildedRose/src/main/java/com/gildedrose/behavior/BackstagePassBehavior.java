@@ -1,10 +1,10 @@
 package com.gildedrose; 
 
 /**
- * Classe implémentant le comportement particulier de dégradation de l'item Backstage Pass
- * Ne redéfinit pas updateSellIn
+ * Classe implementant le comportement particulier de degradation de l'item Backstage Pass
+ * Ne redefinit pas updateSellIn
  * 
- * La qualité de l'item augmente différement selon le nombre de jours restants
+ * La qualite de l'item augmente differement selon le nombre de jours restants
  * 
  * @see Item
  * @see Behavior
@@ -16,7 +16,7 @@ package com.gildedrose;
 public class BackstagePassBehavior implements Behavior {
     /**
      * Espace de nom
-     * Qualité minimale d'un item
+     * Qualite minimale d'un item
      * 
      * @see Item
      */
@@ -24,21 +24,21 @@ public class BackstagePassBehavior implements Behavior {
 
     /**
      * Espace de nom
-     * Qualité à ne pas dépasser
+     * Qualite a ne pas depasser
      * 
      * @see Item
      */
     private final int MAX_QUALITY = 50;
 
     /**
-     * Différents espaces de noms pour les différents valeurs d'incrémentation de la qualité
+     * Differents espaces de noms pour les differents valeurs d'incrementation de la qualite
      * selon le nombre de jours restants avant le concert
      */
     private final int DAYS_REMAINING_10 = 10;
     private final int DAYS_REMAINING_5 = 5;
 
     /**
-     * Valeurs d'incrémentation de qualité selon le nombre de jours restants
+     * Valeurs d'incrementation de qualite selon le nombre de jours restants
      */
     private final int NORMAL_UPGRADE = 1;
     private final int UPGRADE_DAYS_UNDER_10 = 2;
@@ -46,8 +46,8 @@ public class BackstagePassBehavior implements Behavior {
 
 
     /**
-     * Méthode d'augmentation de la qualité de l'item
-     * Si l'item est périmé, qualité nulle
+     * Methode d'augmentation de la qualite de l'item
+     * Si l'item est perime, qualite nulle
      * 
      * @see Item
      * @see Behavior

@@ -1,10 +1,10 @@
 package com.gildedrose;
 
 /**
- * Classe implémentant le comportement particulier de dégradation de l'item AgedBrie
- * Ne redéfinit pas updateSellIn
+ * Classe implementant le comportement particulier de degradation de l'item AgedBrie
+ * Ne redefinit pas updateSellIn
  * 
- * La qualité de l'item augmente avec le temps
+ * La qualite de l'item augmente avec le temps
  * 
  * @see Item
  * @see Behavior
@@ -16,15 +16,15 @@ package com.gildedrose;
 public class AgedBrieBehavior implements Behavior {
     /**
      * Espace de nom
-     * Qualité à ne pas dépasser
+     * Qualite a ne pas depasser
      * 
      * @see Item
      */
     private final int MAX_QUALITY = 50;
 
     /**
-     * Méthode d'augmentation de la qualité de l'item
-     * L'item voit sa qualité augmenter même si instancié avec une qualité négative
+     * Methode d'augmentation de la qualite de l'item
+     * L'item voit sa qualite augmenter meme si instancie avec une qualite negative
      * 
      * @see Item
      * @see Behavior

@@ -1,8 +1,8 @@
 package com.gildedrose; 
 
 /**
- * Classe implémentant le comportement par défaut des items
- * Ne redéfinit pas updateSellIn
+ * Classe implementant le comportement par defaut des items
+ * Ne redefinit pas updateSellIn
  * 
  * 
  * @see Item
@@ -15,15 +15,15 @@ package com.gildedrose;
 public class DefaultBehavior implements Behavior {
     /**
      * Espace de nom
-     * Qualité minimale d'un item
+     * Qualite minimale d'un item
      * 
      * @see Item
      */
     private final int MIN_QUALITY = 0;
 
     /**
-     * Méthode d'augmentation de la qualité de l'item
-     * Augmentation par défaut
+     * Methode d'augmentation de la qualite de l'item
+     * Augmentation par defaut
      * 
      * @see Item
      * @see Behavior

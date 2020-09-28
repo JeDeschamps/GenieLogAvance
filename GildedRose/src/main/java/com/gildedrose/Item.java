@@ -1,10 +1,10 @@
 package com.gildedrose;
 
 /** 
- * Classe représentant un item, 3 attributs :
+ * Classe representant un item, 3 attributs :
  *  - Nom
- *  - Date de péremption
- *  - Qualité
+ *  - Date de peremption
+ *  - Qualite
  * 
  * Fournit accesseurs/setters sur chacun des attributs
  * @version 2.0
@@ -13,7 +13,7 @@ package com.gildedrose;
 
 public class Item {
     /**
-     * Nom de l'item, modification/accès par méthodes préférabl
+     * Nom de l'item, modification/acces par methodes preferable
      * 
      * @see Item#getQuality()
      * @see Item#setQuality(int)
@@ -21,7 +21,7 @@ public class Item {
     public String name;
 
     /**
-     * Jours restants avant péremption
+     * Jours restants avant peremption
      * Valeurs <= 0 si l'item est perime
      * 
      * @see Item#getSellIn()
@@ -32,11 +32,11 @@ public class Item {
     public int sellIn;
 
     /** 
-     * Qualité de l'item
-     * Valeur devant être comprise théoriquement entre 0 et 50
-     * Sulfuras a une qualité fixe à 80 théoriquement
+     * Qualite de l'item
+     * Valeur devant être comprise theoriquement entre 0 et 50
+     * Sulfuras a une qualite fixe a 80 theoriquement
      * 
-     * @implNote Les items peuvent être instanciés avec des valeurs normalement interdites
+     * @implNote Les items peuvent être instancies avec des valeurs normalement interdites
      * 
      * @see Item#getQuality()
      * @see Item#setSellIn(int)
@@ -60,7 +60,7 @@ public class Item {
         this.quality = quality;
     }
 
-    
+
    @Override
    public String toString() {
         return this.name + ", " + this.sellIn + ", " + this.quality;

@@ -2,11 +2,11 @@ package com.gildedrose;
 
 /**
  * L'interface Behavior est l'abstraction que de pattern strategy
- * La famille d'algorithme couverte par la stratégie implémente uniquement cette interface
+ * La famille d'algorithme couverte par la strategie implemente uniquement cette interface
  * 
- * L'interface couvre le comportement de dégradation de la qualité et du sellIn de l'item selon les Items
+ * L'interface couvre le comportement de degradation de la qualite et du sellIn de l'item selon les Items
  * 
- * Interface implémentée par tous les comportements d'item
+ * Interface implementee par tous les comportements d'item
  * 
  * @see Item
  * 
@@ -15,7 +15,7 @@ package com.gildedrose;
 
 public interface Behavior {
     /**
-     * Méthode de dégradation de la qualité de l'item
+     * Methode de degradation de la qualite de l'item
      * 
      * @param Item
      * 
@@ -24,11 +24,11 @@ public interface Behavior {
     void updateItemQuality(Item it);
 
     /**
-     * Méthode de dégradation du sellIn de l'item
+     * Methode de degradation du sellIn de l'item
      * 
      * @param Item
      * 
-     * @implNote Implémentation par défaut, rarement redéfinie
+     * @implNote Implementation par defaut, rarement redefinie
      * 
      * @see Item#sellIn
      */
@@ -40,10 +40,10 @@ public interface Behavior {
     }
 
     /**
-     * Espace de nom pour le test de péremption de l'item
+     * Espace de nom pour le test de peremption de l'item
      * 
      * @param Item
-     * @return si l'item est expiré
+     * @return si l'item est expire
      * 
      * @see Item#quality
      */

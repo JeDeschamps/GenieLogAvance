@@ -1,9 +1,9 @@
 package com.gildedrose; 
 /**
- * Classe implémentant le comportement des items conjured
- * Ne redéfinit pas updateSellIn
+ * Classe implementant le comportement des items conjured
+ * Ne redefinit pas updateSellIn
  * 
- * Les changements de qualité sont doublés quand l'item est conjured
+ * Les changements de qualite sont doubles quand l'item est conjured
  * 
  * @see Item
  * @see Behavior
@@ -16,9 +16,9 @@ package com.gildedrose;
 public class ConjuredBehavior implements Behavior {
 
     /**
-     * Modifie la qualité des items conjurés 
-     * Réutilise l'implémentation du Behavior de l'item concerné
-     * Respecte les contraintes de qualité existantes
+     * Modifie la qualite des items conjures 
+     * Reutilise l'implementation du Behavior de l'item concerne
+     * Respecte les contraintes de qualite existantes
      * 
      * @see Item
      * @see Behavior
