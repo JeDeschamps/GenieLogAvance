@@ -1,7 +1,4 @@
-package com.gildedrose;
-
-import com.gildedrose.AgedBrieBehavior;
-import com.gildedrose.Item;
+package com.gildedrose; 
 
 public class BehaviorFactory {
 
@@ -9,13 +6,13 @@ public class BehaviorFactory {
         String str = it.getName().substring(0, 8);
         switch (str) {
             case "+5 Dexte":
-                return getDexterityVestBehavior();
+                return getDefaultBehavior();
 
             case "Aged Bri":
                 return getAgedBrieBehavior();
             
             case "Elixir o":
-                return getElixirBehavior();
+                return getDefaultBehavior();
             
             case "Sulfuras":
                 return getSulfurasBehavior();
@@ -27,7 +24,7 @@ public class BehaviorFactory {
             default:
                 break;
         }
-        return getElixirBehavior();
+        return getDefaultBehavior();
     }
 
     public static Behavior getAgedBrieBehavior() {
@@ -36,11 +33,8 @@ public class BehaviorFactory {
     public static Behavior getBackstagePassBehavior() {
         return new BackstagePassBehavior();
     }
-    public static Behavior getDexterityVestBehavior() {
-        return new DexterityVestBehavior();
-    }
-    public static Behavior getElixirBehavior() {
-        return new ElixirBehavior();
+    public static Behavior getDefaultBehavior() {
+        return new DefaultBehavior();
     }
     public static Behavior getSulfurasBehavior() {
         return new SulfurasBehavior();

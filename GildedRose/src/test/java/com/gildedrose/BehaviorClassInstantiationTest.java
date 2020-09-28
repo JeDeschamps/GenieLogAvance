@@ -6,7 +6,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 
-class ClassInstantiationTest { 
+class BehaviorClassInstantiationTest { 
     /* Tests unitaires pour verifier la bonne instanciation des classes */
     @Test
     void FactoryReturnsBackstagePassBehaviorClass() {
@@ -23,17 +23,17 @@ class ClassInstantiationTest {
     }
 
     @Test
-    void FactoryReturnsDexterityVestBehaviorClass() {
+    void FactoryReturnsDefaultBehaviorClassDexterityVest() {
         Item[] items = new Item[] { new Item("+5 Dexterity Vest", -1, 50)  };
         Behavior behave = BehaviorFactory.getItemBehavior(items[0]);
-        assertThat(behave.getClass(), is(DexterityVestBehavior.class));
+        assertThat(behave.getClass(), is(DefaultBehavior.class));
     }
 
     @Test
-    void FactoryReturnsElixirBehaviorClass() {
+    void FactoryReturnsDefaultBehaviorClassElixir() {
         Item[] items = new Item[] { new Item("Elixir of the Mongoose", 5, 7) };
         Behavior behave = BehaviorFactory.getItemBehavior(items[0]);
-        assertThat(behave.getClass(), is(ElixirBehavior.class));
+        assertThat(behave.getClass(), is(DefaultBehavior.class));
     }
 
     @Test
@@ -54,7 +54,7 @@ class ClassInstantiationTest {
     void FactoryReturnsDefaultBehaviorIfItemDoesntExist() {
         Item[] items = new Item[] { new Item("Item doesn't exist", 0, 80), };
         Behavior behave = BehaviorFactory.getItemBehavior(items[0]);
-        assertThat(behave.getClass(), is(ElixirBehavior.class));
+        assertThat(behave.getClass(), is(DefaultBehavior.class));
     }
     @Test
     void FactoryReturnsConjuredBehaviorClass() {

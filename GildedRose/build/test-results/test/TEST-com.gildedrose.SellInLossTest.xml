@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.SellInLossTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-09-28T18:35:34" hostname="LAPTOP-7EIT0NTC" time="0.003">
+<testsuite name="com.gildedrose.SellInLossTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-09-28T19:47:38" hostname="LAPTOP-7EIT0NTC" time="0.004">
   <properties/>
   <testcase name="AgedBrieSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.0"/>
-  <testcase name="ElixirSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.001"/>
+  <testcase name="ElixirSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.0"/>
   <testcase name="SulfurasSellInDoesntChange()" classname="com.gildedrose.SellInLossTest" time="0.0"/>
-  <testcase name="BackStagePassSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.0"/>
-  <testcase name="DexterityVestSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.0"/>
+  <testcase name="BackStagePassSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.001"/>
+  <testcase name="DexterityVestSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
