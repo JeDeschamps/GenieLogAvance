@@ -5,9 +5,18 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import static org.hamcrest.Matchers.*;
 
+/**
+ * Cette classe teste que le sellIn decremente lors de la
+ * mise a jour des items
+ * Tests effectues :
+ * - Decrementation du sellIn pour Aged Brie
+ * - Decrementation du sellIn pour l'elixir
+ * - Decrementation du sellIn pour dexterity vest
+ * - Decrementation du sellIn pour backstage pass
+ * - Aucune decrementation pour sulfuras
+ */
 
 class SellInLossTest {
-  /* Test de degradation du SellIn */
   @Test
   void agedBrieSellInUpgrade() {
     final Item[] items = new Item[] {new Item("Aged Brie", 5, 0) };

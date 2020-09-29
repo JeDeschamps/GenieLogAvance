@@ -5,6 +5,18 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import static org.hamcrest.Matchers.*;
 
+/**
+ * Cette classe teste le bon comportement de base de degradation / augmentation
+ * pour nos differents items
+ * Tests effectues :
+ * - Test toString retourne bien une string
+ * - Degradation de la qualite de dexterity vest
+ * - Degradation de la qualite de l'elixir
+ * - L'update de qualite d'un elixir instance avec une qualite negative n'a pas d'effet
+ * - Augmentation de la qualite de aged brie
+ * - Qualite de sulfuras ne change pas (instancie a 50)
+ * - Augmentation / annulation qualite de backstage pass selon les cas
+ */
 
 class NormalDegradationTest {
   private final transient String dexterityVest = "+5 Dexterity Vest";
@@ -16,7 +28,7 @@ class NormalDegradationTest {
     final String str = tmp.toString();
     assertThat(str.getClass(), is(String.class));
   }
-  /* Tests de bonne degradation de la qualite pour chaque items */
+
   @Test
   void dexterityVestQualityUpgrade() {
     final Item[] items = new Item[] {new Item(dexterityVest, 10, 20) };

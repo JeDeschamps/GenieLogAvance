@@ -7,9 +7,25 @@ import com.gildedrose.behavior.*;
 
 import static org.hamcrest.Matchers.*;
 
+/**
+ * Cette classe effectue les tests d'augmentation / degradation de
+ * la qualite selon les items dans les cas proches des limites 0 et 50
+ * On va verifier que la qualite des items ne peut pas passer en dessous
+ * de 0 et au dessus de 50 quand ils sont a ces limites
+ * Tests effectues :
+ * - Degradation d'une dexterity vest a 0 de qualite
+ * - Degradation d'un elixir a 0 de qualite
+ * - Backstage pass reste a 0 de qualite apres une mise a jour
+ *   ou il est perime
+ * - Mise a jour de la qualite de backstage pass met la qualite a 0
+ *   quand l'item est perime (instancie avec une qualite de -10)
+ * - Aged brie ne depasse pas les 50 de qualite
+ * - La qualite de agedbrie augmente meme s'il est instancie avec
+ *   une qualite negative (seul item a se comporte comme ca)
+ * - La qualite de backstage pass ne depasse pas 50 dans les 3 cas possibles
+ */
 
 class QualityBoundariesTest {
-  /* Qualite ne passe pas en dessous de 0 quand l'item n'est pas perime */
 
   private transient String backstagePass = "Backstage passes to a TAFKAL80ETC concert";
   private final transient String agedBrie = "Aged Brie";

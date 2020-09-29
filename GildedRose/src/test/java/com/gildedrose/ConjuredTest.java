@@ -7,9 +7,21 @@ import com.gildedrose.behavior.*;
 
 import static org.hamcrest.Matchers.*;
 
+/**
+ * Cette classe va effectuer les tests du comportement de
+ * degradation de qualite des items conjured quels qu'ils soient
+ * Tests effectues :
+ * - Degradation de qualite de conjured dexterity vest
+ * - Degradation de qualite de conjured dexterity vest perime
+ * - Degradation de qualite de conjured sulfuras
+ * - Degradation de qualite de conjured sulfuras expire
+ * - Degradation de qualite de conjured elixir
+ * - Augmentation de qualite de conjured aged brie
+ * - Augmentation de qualite de conjured backstage pass dans les 3 cas
+ * - Augmentation de qualite d'un item conjured ne depasse pas la limite de 50
+ */
 
 class ConjuredTest {
-  /* Tests comportements du conjured */
   private transient String conjuredBackstagePass = "Conjured Backstage passes to a TAFKAL80ETC concert";
   private transient String conjuredDexterityVest = "Conjured +5 Dexterity Vest";
   private transient String conjuredSulfuras = "Conjured Sulfuras, Hand of Ragnaros";

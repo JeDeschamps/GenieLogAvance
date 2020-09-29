@@ -5,9 +5,21 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import static org.hamcrest.Matchers.*;
 
-
+/**
+ * Cette classe va tester le comportement de degradation / augmentation
+ * de qualite pour les items quand ils sont expires, degradation / augmentation
+ * double.
+ * Tests effectues :
+ * - La qualite de backstage pass tombe a 0 quand perime
+ * - Degradation de qualite de dexterity vest perime
+ * - Degradation de qualite de dexterity vest perime ne tombe pas dans les negatifs
+ * - Degradation de qualite de l'elixir perime
+ * - Degradation de qualite de l'elixir perime ne tombe pas dans les negatifs
+ * - Augmentation de qualite aged brie perime
+ * - Augmentation de qualite aged brie perime ne depasse pas 50
+ * - Qualite de sulfuras ne change pas
+ */
 class ExpiredDegradationTest {
-  /* Test de degradation de qualite quand les items sont expires */
 
   private final transient String dexterityVest = "+5 Dexterity Vest";
   private final transient String elixirMongoose = "Elixir of the Mongoose";
@@ -74,16 +86,5 @@ class ExpiredDegradationTest {
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
     assertThat(testitem.items[0].getQuality(), is(0));
-  }
-
-
-  /* Qualite ne depasse pas les 50 quand l'item est perime */
-
-  @Test
-  void agedBrieQualityDoesntGoAbove50WhenExpired() {
-    final Item[] items = new Item[] {new Item(agedBrie, -1, 50) };
-    final GildedRose testitem = new GildedRose(items);
-    testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(50));
   }
 }

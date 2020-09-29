@@ -8,9 +8,23 @@ import static org.hamcrest.Matchers.*;
 import com.gildedrose.behavior.*;
 import com.gildedrose.conjured.*;
 
+/** .
+ * Cette classe a pour seul objectif de tester la bonne instanciation des classes
+ * au travers de la factory de comportement.
+ * On effectue les tests suivants :
+ * - Bonne instanciation de la classe comportement par défaut
+ *   quand l'item est une dexterity vest/elixir/item qui n'existe pas
+ * - Factory renvoie le comportement de backstage pass peu importe le concert
+ * - Factory renvoie le comportement de aged brie
+ * - Factory renvoie le comportement de sulfuras
+ * - Factory renvoie le comportement de conjured pour un item conjured aleatoire
+ *
+ * @see Behavior
+ * @see Conjured
+ * @see Item
+ */
 
 class BehaviorClassInstantiationTest {
-  /* Tests unitaires pour verifier la bonne instanciation des classes */
   @Test
   void factoryReturnsBackstagePassBehaviorClass() {
     final Item[] items = new Item[] {new Item("Backstage passes to a TAFKAL80ETC concert", 6, 10) };
