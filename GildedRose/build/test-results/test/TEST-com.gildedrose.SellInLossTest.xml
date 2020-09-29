@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.SellInLossTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-09-29T15:29:10" hostname="turing.local.isima.fr" time="0.002">
+<testsuite name="com.gildedrose.SellInLossTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-09-29T16:56:01" hostname="LAPTOP-7EIT0NTC" time="0.003">
   <properties/>
   <testcase name="AgedBrieSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.0"/>
-  <testcase name="ElixirSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.001"/>
+  <testcase name="ElixirSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.0"/>
   <testcase name="SulfurasSellInDoesntChange()" classname="com.gildedrose.SellInLossTest" time="0.0"/>
   <testcase name="BackStagePassSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.0"/>
   <testcase name="DexterityVestSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.0"/>

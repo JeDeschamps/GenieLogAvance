@@ -20,7 +20,7 @@ class NormalDegradationTest {
         Item[] items = new Item[] { new Item("+5 Dexterity Vest", 10, 20) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
-        assertThat(testitem.items[0].quality, is(19));
+        assertThat(testitem.items[0].getQuality(), is(19));
     }
 
     @Test
@@ -28,7 +28,7 @@ class NormalDegradationTest {
         Item[] items = new Item[] { new Item("Elixir of the Mongoose", 5, 7) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
-        assertThat(testitem.items[0].quality, is(6));
+        assertThat(testitem.items[0].getQuality(), is(6));
     }
 
     @Test
@@ -36,14 +36,14 @@ class NormalDegradationTest {
         Item[] items = new Item[] { new Item("Elixir of the Mongoose", 5, -5) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
-        assertThat(testitem.items[0].quality, is(-5));
+        assertThat(testitem.items[0].getQuality(), is(-5));
     }
     @Test
     void AgedBrieQualityUpgrade() {
         Item[] items = new Item[] { new Item("Aged Brie", 2, 0) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
-        assertThat(testitem.items[0].quality, is(1));
+        assertThat(testitem.items[0].getQuality(), is(1));
     }
     
     @Test
@@ -51,7 +51,7 @@ class NormalDegradationTest {
         Item[] items = new Item[] { new Item("Sulfuras, Hand of Ragnaros", 0, 50) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
-        assertThat(testitem.items[0].quality, is(50));
+        assertThat(testitem.items[0].getQuality(), is(50));
     }
 
     @Test
@@ -59,7 +59,7 @@ class NormalDegradationTest {
         Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
-        assertThat(testitem.items[0].quality, is(21));
+        assertThat(testitem.items[0].getQuality(), is(21));
     }
 
     @Test
@@ -67,7 +67,7 @@ class NormalDegradationTest {
         Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 10, 20) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
-        assertThat(testitem.items[0].quality, is(22));
+        assertThat(testitem.items[0].getQuality(), is(22));
     }
 
     @Test
@@ -75,7 +75,7 @@ class NormalDegradationTest {
         Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 1, 20) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
-        assertThat(testitem.items[0].quality, is(23));
+        assertThat(testitem.items[0].getQuality(), is(23));
     }
     
 }
