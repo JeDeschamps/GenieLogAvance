@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.BehaviorClassInstantiationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-09-28T20:08:27" hostname="LAPTOP-7EIT0NTC" time="0.046">
+<testsuite name="com.gildedrose.BehaviorClassInstantiationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-09-29T10:53:11" hostname="LAPTOP-7EIT0NTC" time="0.04">
   <properties/>
-  <testcase name="FactoryReturnsDefaultBehaviorClassDexterityVest()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.032"/>
+  <testcase name="FactoryReturnsDefaultBehaviorClassDexterityVest()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.027"/>
   <testcase name="FactoryReturnsSulfuraBehaviorClass()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.002"/>
-  <testcase name="FactoryReturnsConjuredBehaviorClass()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.003"/>
-  <testcase name="FactoryReturnsDefaultBehaviorClassElixir()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.001"/>
-  <testcase name="BehaviorFactoryClass()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.0"/>
+  <testcase name="FactoryReturnsConjuredBehaviorClass()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.002"/>
+  <testcase name="FactoryReturnsDefaultBehaviorClassElixir()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.0"/>
+  <testcase name="BehaviorFactoryClass()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.001"/>
   <testcase name="FactoryReturnsAgedBrieBehaviorClass()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.002"/>
   <testcase name="FactoryReturnsDefaultBehaviorIfItemDoesntExist()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.0"/>
-  <testcase name="FactoryReturnsBackstagePassBehaviorClass()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.002"/>
+  <testcase name="FactoryReturnsBackstagePassBehaviorClass()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

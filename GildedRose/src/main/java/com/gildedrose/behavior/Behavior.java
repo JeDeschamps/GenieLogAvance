@@ -1,4 +1,5 @@
-package com.gildedrose;
+package com.gildedrose.behavior;
+import com.gildedrose.*;
 
 /**
  * L'interface Behavior est l'abstraction que de pattern strategy
@@ -35,7 +36,7 @@ public interface Behavior {
     default void updateItemSellIn(Item it){
         if(!it.getName().equals("Sulfuras, Hand of Ragnaros"))
         {
-            it.setSellIn(it.getSellIn()-1);
+            it.setSellIn(it.getSellIn() - 1);
         }
     }
 

@@ -1,4 +1,5 @@
-package com.gildedrose; 
+package com.gildedrose.behavior;
+import com.gildedrose.*;
 
 /**
  * Classe implementant le comportement particulier de degradation de l'item Backstage Pass
@@ -20,7 +21,7 @@ public class BackstagePassBehavior implements Behavior {
      * 
      * @see Item
      */
-    private final int MIN_QUALITY = 0;
+    private transient final int MIN_QUALITY = 0;
 
     /**
      * Espace de nom
@@ -28,21 +29,21 @@ public class BackstagePassBehavior implements Behavior {
      * 
      * @see Item
      */
-    private final int MAX_QUALITY = 50;
+    private transient final int MAX_QUALITY = 50;
 
     /**
      * Differents espaces de noms pour les differents valeurs d'incrementation de la qualite
      * selon le nombre de jours restants avant le concert
      */
-    private final int DAYS_REMAINING_10 = 10;
-    private final int DAYS_REMAINING_5 = 5;
+    private transient final int DAYS_REMAINING_10 = 10;
+    private transient final int DAYS_REMAINING_5 = 5;
 
     /**
      * Valeurs d'incrementation de qualite selon le nombre de jours restants
      */
-    private final int NORMAL_UPGRADE = 1;
-    private final int UPGRADE_DAYS_UNDER_10 = 2;
-    private final int UPGRADE_DAYS_UNDER_5 = 3;
+    private transient final int NORMAL_UPGRADE = 1;
+    private transient final int UPGRADE_DAYS_UNDER_10 = 2;
+    private transient final int UPGRADE_DAYS_UNDER_5 = 3;
 
 
     /**

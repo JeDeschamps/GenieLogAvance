@@ -3,6 +3,9 @@ package com.gildedrose;
 import org.junit.jupiter.api.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+import com.gildedrose.*;
+import com.gildedrose.behavior.*;
+
 import static org.hamcrest.Matchers.*;
 
 
@@ -23,10 +26,10 @@ class QualityBoundariesTest {
         testitem.updateQuality();
         assertThat(testitem.items[0].quality, is(0));
     }
-
+    private transient String BackstagePass = "Backstage passes to a TAFKAL80ETC concert";
     @Test
     void BackStagePassQualityDoesntDropUnder0() {
-        Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", -2, 0) };
+        Item[] items = new Item[] { new Item(BackstagePass, -2, 0) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
         assertThat(testitem.items[0].quality, is(0));
@@ -34,7 +37,7 @@ class QualityBoundariesTest {
 
     @Test
     void BackStagePassQualityEquals0WhenExpired() {
-        Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", -2, -10) };
+        Item[] items = new Item[] { new Item(BackstagePass, -2, -10) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
         assertThat(testitem.items[0].quality, is(0));
@@ -60,7 +63,7 @@ class QualityBoundariesTest {
 
     @Test
     void BackStagePassQualityDoesntGoAbove50WhenSellInAbove10() {
-        Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 15, 50) };
+        Item[] items = new Item[] { new Item(BackstagePass, 15, 50) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
         assertThat(testitem.items[0].quality, is(50));
@@ -68,7 +71,7 @@ class QualityBoundariesTest {
 
     @Test
     void BackStagePassQualityDoesntGoAbove50WhenSellInUnder10Above5() {
-        Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49) };
+        Item[] items = new Item[] { new Item(BackstagePass, 10, 49) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
         assertThat(testitem.items[0].quality, is(50));
@@ -76,7 +79,7 @@ class QualityBoundariesTest {
 
     @Test
     void BackStagePassQualityDoesntGoAbove50WhenSellInUnder5Above0() {
-        Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 5, 48) };
+        Item[] items = new Item[] { new Item(BackstagePass, 5, 48) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
         assertThat(testitem.items[0].quality, is(50));

@@ -5,6 +5,10 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import static org.hamcrest.Matchers.*;
 
+import com.gildedrose.*;
+import com.gildedrose.behavior.*;
+import com.gildedrose.conjured.*;
+
 
 class BehaviorClassInstantiationTest { 
     /* Tests unitaires pour verifier la bonne instanciation des classes */

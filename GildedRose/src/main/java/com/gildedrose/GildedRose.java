@@ -1,4 +1,5 @@
 package com.gildedrose;
+import com.gildedrose.behavior.*;
 
 /** 
  * Classe representant la taverne, 1 attribut :
@@ -21,7 +22,7 @@ class GildedRose {
      * @see GIldedRose#updateQualityForItem
      * @see Behavior
      */
-    Item[] items;
+    transient Item[] items;
 
     /**
      * Constructeur de GildedRose
@@ -64,5 +65,5 @@ class GildedRose {
         Behavior itemBehavior = BehaviorFactory.getItemBehavior(it);
         itemBehavior.updateItemQuality(it);
         itemBehavior.updateItemSellIn(it);
-    }
+    }    
 }

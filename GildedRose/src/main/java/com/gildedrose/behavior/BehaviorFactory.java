@@ -1,4 +1,6 @@
-package com.gildedrose; 
+package com.gildedrose.behavior;
+import com.gildedrose.*;
+import com.gildedrose.conjured.*;
 
 public class BehaviorFactory {
 

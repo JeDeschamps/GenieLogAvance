@@ -1,4 +1,5 @@
-package com.gildedrose; 
+package com.gildedrose.behavior;
+import com.gildedrose.*;
 
 /**
  * Classe implementant le comportement par defaut des items
@@ -19,7 +20,13 @@ public class DefaultBehavior implements Behavior {
      * 
      * @see Item
      */
-    private final int MIN_QUALITY = 0;
+    private transient final int MIN_QUALITY = 0;
+
+    /**
+     * Espace de nom 
+     * Incrementation normale
+     */
+    private transient final int NORMAL_UPGRADE = 1;
 
     /**
      * Methode d'augmentation de la qualite de l'item
@@ -35,9 +42,9 @@ public class DefaultBehavior implements Behavior {
     public void updateItemQuality(Item it){ 
         if (it.getQuality() > MIN_QUALITY)
         {
-            it.setQuality(it.getQuality() - 1);
+            it.setQuality(it.getQuality() - NORMAL_UPGRADE);
             if(it.getQuality() > MIN_QUALITY && isExpired(it))
-                it.setQuality(it.getQuality() - 1);
+                it.setQuality(it.getQuality() - NORMAL_UPGRADE);
         }
     }
 }

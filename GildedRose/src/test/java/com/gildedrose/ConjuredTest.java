@@ -3,6 +3,9 @@ package com.gildedrose;
 import org.junit.jupiter.api.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+import com.gildedrose.*;
+import com.gildedrose.behavior.*;
+
 import static org.hamcrest.Matchers.*;
 
 
@@ -56,9 +59,10 @@ class ConjuredTest {
         assertThat(testitem.items[0].quality, is(2));
     }
 
+    private transient String conjuredBackstagePass = "Conjured Backstage passes to a TAFKAL80ETC concert";
     @Test
     void ConjuredBackstagePassQualityUpgradeSellInAbove10() {
-        Item[] items = new Item[] { new Item("Conjured Backstage passes to a TAFKAL80ETC concert", 15, 20) };
+        Item[] items = new Item[] { new Item(conjuredBackstagePass, 15, 20) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
         assertThat(testitem.items[0].quality, is(22));
@@ -66,7 +70,7 @@ class ConjuredTest {
 
     @Test
     void ConjuredBackstagePassQualityUpgradeSellInUnder10Above5() {
-        Item[] items = new Item[] { new Item("Conjured Backstage passes to a TAFKAL80ETC concert", 10, 20) };
+        Item[] items = new Item[] { new Item(conjuredBackstagePass, 10, 20) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
         assertThat(testitem.items[0].quality, is(24));
@@ -74,14 +78,14 @@ class ConjuredTest {
 
     @Test
     void ConjuredBackstagePassQualityUpgradeSellInUnder5Above0() {
-        Item[] items = new Item[] { new Item("Conjured Backstage passes to a TAFKAL80ETC concert", 1, 20) };
+        Item[] items = new Item[] { new Item(conjuredBackstagePass, 1, 20) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
         assertThat(testitem.items[0].quality, is(26));
     }
     @Test
     void ConjuredBackstagePassQualityUpgradeSellInUnder5Above0CapsAt50() {
-        Item[] items = new Item[] { new Item("Conjured Backstage passes to a TAFKAL80ETC concert", 1, 46) };
+        Item[] items = new Item[] { new Item(conjuredBackstagePass, 1, 46) };
         GildedRose testitem = new GildedRose(items);
         testitem.updateQuality();
         assertThat(testitem.items[0].quality, is(50));

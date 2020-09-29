@@ -1,4 +1,5 @@
-package com.gildedrose;
+package com.gildedrose.behavior;
+import com.gildedrose.*;
 
 /**
  * Classe implementant le comportement particulier de degradation de l'item AgedBrie
@@ -20,7 +21,13 @@ public class AgedBrieBehavior implements Behavior {
      * 
      * @see Item
      */
-    private final int MAX_QUALITY = 50;
+    private transient final int MAX_QUALITY = 50;
+
+    /**
+     * Espace de nom 
+     * Incrementation normale
+     */
+    private transient final int NORMAL_UPGRADE = 1;
 
     /**
      * Methode d'augmentation de la qualite de l'item
@@ -36,9 +43,9 @@ public class AgedBrieBehavior implements Behavior {
     public void updateItemQuality(Item it){ 
         if (it.getQuality() < MAX_QUALITY)
         {
-            it.setQuality(it.getQuality() + 1);
+            it.setQuality(it.getQuality() + NORMAL_UPGRADE);
             if(it.getQuality() < MAX_QUALITY && isExpired(it))
-                it.setQuality(it.getQuality() + 1);
+                it.setQuality(it.getQuality() + NORMAL_UPGRADE);
         }
     }
 }

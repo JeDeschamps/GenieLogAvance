@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.NormalDegradationTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-09-28T20:08:27" hostname="LAPTOP-7EIT0NTC" time="0.007">
+<testsuite name="com.gildedrose.NormalDegradationTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-09-29T10:53:11" hostname="LAPTOP-7EIT0NTC" time="0.007">
   <properties/>
   <testcase name="AgedBrieQualityUpgrade()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
-  <testcase name="DexterityVestQualityUpgrade()" classname="com.gildedrose.NormalDegradationTest" time="0.001"/>
-  <testcase name="BackstagePassQualityUpgradeSellInUnder10Above5()" classname="com.gildedrose.NormalDegradationTest" time="0.001"/>
+  <testcase name="DexterityVestQualityUpgrade()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
+  <testcase name="BackstagePassQualityUpgradeSellInUnder10Above5()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
   <testcase name="BackstagePassQualityUpgradeSellInAbove10()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
   <testcase name="ElixirQualityUpgrade()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
-  <testcase name="QualityUpgradeWhenNegativeQualityHasNoEffect()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
-  <testcase name="BackstagePassQualityUpgradeSellInUnder5Above0()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
+  <testcase name="QualityUpgradeWhenNegativeQualityHasNoEffect()" classname="com.gildedrose.NormalDegradationTest" time="0.001"/>
+  <testcase name="BackstagePassQualityUpgradeSellInUnder5Above0()" classname="com.gildedrose.NormalDegradationTest" time="0.001"/>
   <testcase name="toStringReturnsString()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
   <testcase name="SulfurasQualityDoesntChange()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

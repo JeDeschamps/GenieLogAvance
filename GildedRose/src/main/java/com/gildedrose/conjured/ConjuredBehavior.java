@@ -1,4 +1,7 @@
-package com.gildedrose; 
+package com.gildedrose.conjured; 
+import com.gildedrose.*;
+import com.gildedrose.behavior.*;
+
 /**
  * Classe implementant le comportement des items conjured
  * Ne redefinit pas updateSellIn
