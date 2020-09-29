@@ -1,4 +1,5 @@
 package com.gildedrose.behavior;
+
 import com.gildedrose.*;
 
 /** .
@@ -13,19 +14,19 @@ import com.gildedrose.*;
  */
 public class SulfurasBehavior implements Behavior {
 
-    /** .
-     * Les methodes d'update pour l'item
-     * Methodes vides
-     *
-     * @see Item
-     * @see Behavior
-     *
-     * @param Item
-     */
-    public void updateItemSellIn(Item it) {
-        
-    }
-    public void updateItemQuality(Item it) { 
-        
-    }
+  /** .
+   * Les methodes d'update pour l'item
+   * Methodes vides
+   *
+   * @see Item
+   * @see Behavior
+   *
+   * @param it
+   */
+  public void updateItemSellIn(Item it) {
+
+  }
+  public void updateItemQuality(Item it) {
+
+  }
 }

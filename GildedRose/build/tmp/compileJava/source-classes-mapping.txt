@@ -1,9 +1,9 @@
 com/gildedrose/behavior/Behavior.java
  com.gildedrose.behavior.Behavior
-com/gildedrose/behavior/BehaviorFactory.java
- com.gildedrose.behavior.BehaviorFactory
-com/gildedrose/behavior/SulfurasBehavior.java
- com.gildedrose.behavior.SulfurasBehavior
+com/gildedrose/conjured/ConjuredBehavior.java
+ com.gildedrose.conjured.ConjuredBehavior
+com/gildedrose/Item.java
+ com.gildedrose.Item
 com/gildedrose/behavior/AgedBrieBehavior.java
  com.gildedrose.behavior.AgedBrieBehavior
 com/gildedrose/behavior/BackstagePassBehavior.java
@@ -12,7 +12,7 @@ com/gildedrose/GildedRose.java
  com.gildedrose.GildedRose
 com/gildedrose/behavior/DefaultBehavior.java
  com.gildedrose.behavior.DefaultBehavior
-com/gildedrose/Item.java
- com.gildedrose.Item
-com/gildedrose/conjured/ConjuredBehavior.java
- com.gildedrose.conjured.ConjuredBehavior
+com/gildedrose/behavior/BehaviorFactory.java
+ com.gildedrose.behavior.BehaviorFactory
+com/gildedrose/behavior/SulfurasBehavior.java
+ com.gildedrose.behavior.SulfurasBehavior

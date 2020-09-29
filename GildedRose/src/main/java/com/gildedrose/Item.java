@@ -1,5 +1,5 @@
 package com.gildedrose;
-import com.gildedrose.*;
+import com.gildedrose.behavior.*;
 /** .
  * Classe representant un item, 3 attributs :
  *  - Nom
