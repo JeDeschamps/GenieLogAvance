@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.NormalDegradationTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-09-29T16:56:01" hostname="LAPTOP-7EIT0NTC" time="0.008">
+<testsuite name="com.gildedrose.NormalDegradationTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-09-29T17:50:53" hostname="LAPTOP-7EIT0NTC" time="0.007">
   <properties/>
-  <testcase name="AgedBrieQualityUpgrade()" classname="com.gildedrose.NormalDegradationTest" time="0.001"/>
-  <testcase name="DexterityVestQualityUpgrade()" classname="com.gildedrose.NormalDegradationTest" time="0.001"/>
-  <testcase name="BackstagePassQualityUpgradeSellInUnder10Above5()" classname="com.gildedrose.NormalDegradationTest" time="0.001"/>
-  <testcase name="BackstagePassQualityUpgradeSellInAbove10()" classname="com.gildedrose.NormalDegradationTest" time="0.001"/>
-  <testcase name="ElixirQualityUpgrade()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
-  <testcase name="QualityUpgradeWhenNegativeQualityHasNoEffect()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
-  <testcase name="BackstagePassQualityUpgradeSellInUnder5Above0()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
+  <testcase name="sulfurasQualityDoesntChange()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
+  <testcase name="qualityUpgradeWhenNegativeQualityHasNoEffect()" classname="com.gildedrose.NormalDegradationTest" time="0.001"/>
+  <testcase name="backstagePassQualityUpgradeSellInUnder5Above0()" classname="com.gildedrose.NormalDegradationTest" time="0.001"/>
+  <testcase name="dexterityVestQualityUpgrade()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
+  <testcase name="backstagePassQualityUpgradeSellInAbove10()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
+  <testcase name="backstagePassQualityUpgradeSellInUnder10Above5()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
+  <testcase name="elixirQualityUpgrade()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
+  <testcase name="agedBrieQualityUpgrade()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
   <testcase name="toStringReturnsString()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
-  <testcase name="SulfurasQualityDoesntChange()" classname="com.gildedrose.NormalDegradationTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

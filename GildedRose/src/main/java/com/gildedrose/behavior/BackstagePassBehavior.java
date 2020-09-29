@@ -32,19 +32,11 @@ public class BackstagePassBehavior implements Behavior {
   private final transient int maxquality = 50;
 
   /**
-   * Differents espaces de noms pour les differents valeurs d'incrementation de la qualite
-   * selon le nombre de jours restants avant le concert
+   * Espaces de nom
+   * Nombre de jours restants avant le concert
    */
   private final transient  int daysRemaining10 = 10;
   private final transient  int daysRemaining5 = 5;
-
-  /**
-   * Valeurs d'incrementation de qualite selon le nombre de jours restants
-   */
-  private final transient  int normalupgrade = 1;
-  private final transient  int upgradeUnder10 = 2;
-  private final transient int upgradeUnder5 = 3;
-
 
   /** .
    * Methode d'augmentation de la qualite de l'item
@@ -56,24 +48,13 @@ public class BackstagePassBehavior implements Behavior {
    * @param it
    */
   public void updateItemQuality(Item it) {
-    final int inc;
-    inc = it.getSellIn() > daysRemaining10 ? normalupgrade : isBetween5and10(it) ? upgradeUnder10 : upgradeUnder5;
+    final int tmp = it.getSellIn();
+    final int inc = tmp > daysRemaining10 ? 1 : tmp <= daysRemaining10 && tmp > daysRemaining5 ? 2 : 3;
     if (isExpired(it)) {
       it.setQuality(0);
     } else {
-      final int tmp = (it.getQuality() + inc) > maxquality ? 50 : it.getQuality() + inc;
-      it.setQuality(tmp);
+      it.setQuality((it.getQuality() + inc) > maxquality ? 50 : it.getQuality() + inc);
     }
   }
 
-  /** .
-   * Methode de verification si le sellIn est entre 5 et 10
-   *
-   * @see Item
-   *
-   * @param it
-   */
-  private boolean isBetween5and10(Item it) {
-    return it.getSellIn() <= daysRemaining10 && it.getSellIn() > 5;
-  }
 }

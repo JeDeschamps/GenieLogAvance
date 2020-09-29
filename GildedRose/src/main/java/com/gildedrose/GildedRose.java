@@ -42,8 +42,6 @@ class GildedRose {
    *
    * @see Item
    * @see GildedRose#updateQualityForItem(Item)
-   *
-   * @return Rien, met a jour la collection
    */
   public void updateQuality() {
     for (Item it : this.items) {
@@ -59,7 +57,6 @@ class GildedRose {
    * @see BehaviorFactory
    *
    * @param it
-   * @return rien, modification des valeurs de l'item
    */
   public void updateQualityForItem(Item it) {
     final Behavior itemBehavior = BehaviorFactory.getItemBehavior(it);
