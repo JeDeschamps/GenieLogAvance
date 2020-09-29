@@ -1,11 +1,11 @@
+com/gildedrose/BehaviorClassInstantiationTest.java
+ com.gildedrose.BehaviorClassInstantiationTest
 com/gildedrose/SellInLossTest.java
  com.gildedrose.SellInLossTest
 com/gildedrose/TexttestFixture.java
  com.gildedrose.TexttestFixture
 com/gildedrose/NormalDegradationTest.java
  com.gildedrose.NormalDegradationTest
-com/gildedrose/BehaviorClassInstantiationTest.java
- com.gildedrose.BehaviorClassInstantiationTest
 com/gildedrose/QualityBoundariesTest.java
  com.gildedrose.QualityBoundariesTest
 com/gildedrose/ConjuredTest.java
