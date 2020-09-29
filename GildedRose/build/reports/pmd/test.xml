@@ -2,17 +2,7 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.23.0" timestamp="2020-09-29T16:10:51.414">
-<file name="/home/local.isima.fr/jedeschamp2/Documents/GenieLogAvance/GenieLogAvance/GildedRose/src/test/java/com/gildedrose/BehaviorClassInstantiationTest.java">
-<violation beginline="8" endline="8" begincolumn="1" endcolumn="24" rule="ImportFromSamePackage" ruleset="Error Prone" package="com.gildedrose" class="BehaviorClassInstantiationTest" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#importfromsamepackage" priority="3">
-No need to import a type that lives in the same package
-</violation>
-</file>
-<file name="/home/local.isima.fr/jedeschamp2/Documents/GenieLogAvance/GenieLogAvance/GildedRose/src/test/java/com/gildedrose/ConjuredTest.java">
-<violation beginline="6" endline="6" begincolumn="1" endcolumn="24" rule="ImportFromSamePackage" ruleset="Error Prone" package="com.gildedrose" class="ConjuredTest" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#importfromsamepackage" priority="3">
-No need to import a type that lives in the same package
-</violation>
-</file>
+    version="6.23.0" timestamp="2020-09-29T17:29:58.821">
 <file name="/home/local.isima.fr/jedeschamp2/Documents/GenieLogAvance/GenieLogAvance/GildedRose/src/test/java/com/gildedrose/QualityBoundariesTest.java">
 <violation beginline="6" endline="6" begincolumn="1" endcolumn="24" rule="ImportFromSamePackage" ruleset="Error Prone" package="com.gildedrose" class="QualityBoundariesTest" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#importfromsamepackage" priority="3">
 No need to import a type that lives in the same package

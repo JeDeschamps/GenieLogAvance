@@ -2,10 +2,10 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.23.0" timestamp="2020-09-29T16:11:40.673">
+    version="6.23.0" timestamp="2020-09-29T17:14:12.438">
 <file name="/home/local.isima.fr/jedeschamp2/Documents/GenieLogAvance/GenieLogAvance/GildedRose/src/main/java/com/gildedrose/behavior/BackstagePassBehavior.java">
-<violation beginline="61" endline="69" begincolumn="13" endcolumn="163" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="com.gildedrose.behavior" class="BackstagePassBehavior" method="updateItemQuality" variable="increase" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DU'-anomaly for variable 'increase' (lines '61'-'69').
+<violation beginline="60" endline="67" begincolumn="5" endcolumn="113" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="com.gildedrose.behavior" class="BackstagePassBehavior" method="updateItemQuality" variable="inc" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'inc' (lines '60'-'67').
 </violation>
 </file>
 </pmd>
