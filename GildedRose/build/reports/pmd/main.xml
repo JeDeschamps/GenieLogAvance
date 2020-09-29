@@ -2,7 +2,7 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.23.0" timestamp="2020-09-29T21:45:37.381">
+    version="6.23.0" timestamp="2020-09-29T21:56:14.915">
 <file name="/mnt/c/Travail/GenieLogM1/GenieLogAvance/GildedRose/src/main/java/com/gildedrose/behavior/BackstagePassBehavior.java">
 <violation beginline="52" endline="58" begincolumn="15" endcolumn="102" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="com.gildedrose.behavior" class="BackstagePassBehavior" method="updateItemQuality" variable="inc" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
 Found 'DU'-anomaly for variable 'inc' (lines '52'-'58').

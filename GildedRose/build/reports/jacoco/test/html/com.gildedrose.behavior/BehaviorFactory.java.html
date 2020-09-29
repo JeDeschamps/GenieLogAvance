@@ -2,33 +2,64 @@
 import com.gildedrose.*;
 import com.gildedrose.conjured.*;
 
+/**
+ * Notre fabrique d'objets Behavior
+ *
+ * Instancie dynamiquement le comportement approprie a l'objet
+ * qu'on passe en parametre a notre unique methode.
+ * Utilise un switch sur le nom de l'item dans cette version.
+ * --&gt; Trop de return au sein d'une meme fonction
+ *
+ * Methode statique, pas besoin d'instancier la factory pour l'utiliser
+ *
+ * @see Behavior
+ * @see Item
+ *
+ * @version 1.0
+ */
 public final class BehaviorFactory {
+  /**
+   * Constructeur prive, cree uniquement pour le checkstyle
+   *
+   * Corps de methode vide
+   */
   private BehaviorFactory() {
 
   }
 
+  /**.
+   * Methode statique de la fabrique
+   * Renvoie un comportement par defaut en cas d'item inconnu ou pas implemente
+   *
+   *
+   * @see Behavior
+   * @see Item
+   *
+   * @param it l'objet dont on souhaite obtenir le comportement associe
+   * @return Un objet behavior, comportement associe a l'objet
+   */
   public static Behavior getItemBehavior(Item it) {
-<span class="fc" id="L11">    final String str = it.getName().substring(0, 8);</span>
-<span class="fc bfc" id="L12" title="All 7 branches covered.">    switch (str) {</span>
+<span class="fc" id="L42">    final String str = it.getName().substring(0, 8);</span>
+<span class="fc bfc" id="L43" title="All 7 branches covered.">    switch (str) {</span>
       case &quot;+5 Dexte&quot;:
-<span class="fc" id="L14">        return new DefaultBehavior();</span>
+<span class="fc" id="L45">        return new DefaultBehavior();</span>
 
       case &quot;Aged Bri&quot;:
-<span class="fc" id="L17">        return new AgedBrieBehavior();</span>
+<span class="fc" id="L48">        return new AgedBrieBehavior();</span>
 
       case &quot;Elixir o&quot;:
-<span class="fc" id="L20">        return new DefaultBehavior();</span>
+<span class="fc" id="L51">        return new DefaultBehavior();</span>
 
       case &quot;Sulfuras&quot;:
-<span class="fc" id="L23">        return new SulfurasBehavior();</span>
+<span class="fc" id="L54">        return new SulfurasBehavior();</span>
       case &quot;Backstag&quot;:
-<span class="fc" id="L25">        return new BackstagePassBehavior();</span>
+<span class="fc" id="L56">        return new BackstagePassBehavior();</span>
       case &quot;Conjured&quot;:
-<span class="fc" id="L27">        return new ConjuredBehavior();</span>
+<span class="fc" id="L58">        return new ConjuredBehavior();</span>
       default:
         break;
     }
-<span class="fc" id="L31">    return new DefaultBehavior();</span>
+<span class="fc" id="L62">    return new DefaultBehavior();</span>
   }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
