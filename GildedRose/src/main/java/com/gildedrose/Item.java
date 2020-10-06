@@ -37,9 +37,9 @@ public class Item {
   /** .
    * Constructeur Item
    *
-   * @param nameConstruct
-   * @param sellInConstruct
-   * @param qualityConstruct
+   * @param nameConstruct nom 
+   * @param sellInConstruct sellIn
+   * @param qualityConstruct qualite
    *
    * @see Item#name
    * @see Item#sellIn
