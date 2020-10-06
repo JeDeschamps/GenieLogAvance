@@ -13,19 +13,13 @@ import com.gildedrose.behavior.*;
 
 public class Item {
   /** .
-   * Nom de l'item, modification/acces par methodes preferable
-   *
-   * @see Item#getQuality()
-   * @see Item#setQuality(int)
+   * Nom de l'item
    */
   public String name;
 
   /** .
    * Jours restants avant peremption
-   * Valeurs <= 0 si l'item est perime
-   *
-   * @see Item#getSellIn()
-   * @see Item#setSellIn(int)
+   * Valeurs negative ou nulle si l'item est perime
    *
    * @see Behavior#isExpired(Item)
    */
@@ -36,10 +30,7 @@ public class Item {
    * Valeur devant être comprise theoriquement entre 0 et 50
    * Sulfuras a une qualite fixe a 80 theoriquement
    *
-   * @implNote Les items peuvent être instancies avec des valeurs normalement interdites
-   *
-   * @see Item#getQuality()
-   * @see Item#setSellIn(int)
+   * Les items peuvent être instancies avec des valeurs normalement interdites
    */
   public int quality;
 
