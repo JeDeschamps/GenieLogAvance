@@ -22,7 +22,7 @@ class SellInLossTest {
     final Item[] items = new Item[] {new Item("Aged Brie", 5, 0) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getSellIn(), is(4));
+    assertThat(testitem.items[0].sellIn, is(4));
   }
 
   @Test
@@ -30,7 +30,7 @@ class SellInLossTest {
     final Item[] items = new Item[] {new Item("Elixir of the Mongoose", 5, 7) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getSellIn(), is(4));
+    assertThat(testitem.items[0].sellIn, is(4));
   }
 
   @Test
@@ -38,7 +38,7 @@ class SellInLossTest {
     final Item[] items = new Item[] {new Item("+5 Dexterity Vest", 10, 20) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getSellIn(), is(9));
+    assertThat(testitem.items[0].sellIn, is(9));
   }
 
   @Test
@@ -46,7 +46,7 @@ class SellInLossTest {
     final Item[] items = new Item[] {new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getSellIn(), is(14));
+    assertThat(testitem.items[0].sellIn, is(14));
   }
 
   @Test
@@ -54,7 +54,7 @@ class SellInLossTest {
     final Item[] items = new Item[] {new Item("Sulfuras, Hand of Ragnaros", 0, 80)};
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getSellIn(), is(0));
+    assertThat(testitem.items[0].sellIn, is(0));
   }
 
 }

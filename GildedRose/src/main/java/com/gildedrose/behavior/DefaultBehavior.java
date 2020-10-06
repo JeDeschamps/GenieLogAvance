@@ -39,10 +39,10 @@ public class DefaultBehavior implements Behavior {
    * @param it
    */
   public void updateItemQuality(Item it) {
-    if (it.getQuality() > minquality) {
-      it.setQuality(it.getQuality() - normalupgrade);
-      if (it.getQuality() > minquality && isExpired(it)) {
-        it.setQuality(it.getQuality() - normalupgrade);
+    if (it.quality > minquality) {
+      it.quality = it.quality - normalupgrade;
+      if (it.quality > minquality && isExpired(it)) {
+        it.quality = it.quality - normalupgrade;
       }
     }
   }

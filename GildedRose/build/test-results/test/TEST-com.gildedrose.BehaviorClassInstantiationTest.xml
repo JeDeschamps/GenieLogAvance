@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.BehaviorClassInstantiationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-09-29T19:56:18" hostname="LAPTOP-7EIT0NTC" time="0.043">
+<testsuite name="com.gildedrose.BehaviorClassInstantiationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-10-06T14:23:41" hostname="turing.local.isima.fr" time="0.006">
   <properties/>
-  <testcase name="factoryReturnsConjuredBehaviorClass()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.029"/>
-  <testcase name="factoryReturnsDefaultBehaviorClassElixir()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.002"/>
-  <testcase name="factoryReturnsAgedBrieBehaviorClass()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.002"/>
-  <testcase name="factoryReturnsBackstagePassBehaviorClass()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.003"/>
-  <testcase name="factoryReturnsDefaultBehaviorIfItemDoesntExist()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.0"/>
-  <testcase name="factoryReturnsSulfuraBehaviorClass()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.002"/>
+  <testcase name="factoryReturnsConjuredBehaviorClass()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.001"/>
+  <testcase name="factoryReturnsDefaultBehaviorClassElixir()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.001"/>
+  <testcase name="factoryReturnsAgedBrieBehaviorClass()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.0"/>
+  <testcase name="factoryReturnsBackstagePassBehaviorClass()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.0"/>
+  <testcase name="factoryReturnsDefaultBehaviorIfItemDoesntExist()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.001"/>
+  <testcase name="factoryReturnsSulfuraBehaviorClass()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.001"/>
   <testcase name="factoryReturnsDefaultBehaviorClassDexterityVest()" classname="com.gildedrose.BehaviorClassInstantiationTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

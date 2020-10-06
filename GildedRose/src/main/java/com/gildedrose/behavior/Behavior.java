@@ -34,8 +34,8 @@ public interface Behavior {
    * @see Item#sellIn
    */
   default void updateItemSellIn(Item it) {
-    if (!it.getName().equals("Sulfuras, Hand of Ragnaros")) {
-      it.setSellIn(it.getSellIn() - 1);
+    if (!it.name.equals("Sulfuras, Hand of Ragnaros")) {
+      it.sellIn = it.sellIn - 1;
     }
   }
 
@@ -48,6 +48,6 @@ public interface Behavior {
    * @see Item#quality
    */
   default boolean isExpired(Item it) {
-    return it.getSellIn() <= 0;
+    return it.sellIn <= 0;
   }
 }

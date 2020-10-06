@@ -39,7 +39,7 @@ public final class BehaviorFactory {
    * @return Un objet behavior, comportement associe a l'objet
    */
   public static Behavior getItemBehavior(Item it) {
-    final String str = it.getName().substring(0, 8);
+    final String str = it.name.substring(0, 8);
     switch (str) {
       case "+5 Dexte":
         return new DefaultBehavior();

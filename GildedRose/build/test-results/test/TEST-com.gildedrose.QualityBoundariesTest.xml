@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.QualityBoundariesTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-09-29T19:56:18" hostname="LAPTOP-7EIT0NTC" time="0.007">
+<testsuite name="com.gildedrose.QualityBoundariesTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-10-06T14:23:41" hostname="turing.local.isima.fr" time="0.019">
   <properties/>
-  <testcase name="dexterityVestQualityDoesntDropUnder0()" classname="com.gildedrose.QualityBoundariesTest" time="0.001"/>
-  <testcase name="backStagePassQualityDoesntGoAbove50WhenSellInUnder10Above5()" classname="com.gildedrose.QualityBoundariesTest" time="0.0"/>
-  <testcase name="backStagePassQualityDoesntGoAbove50WhenSellInAbove10()" classname="com.gildedrose.QualityBoundariesTest" time="0.0"/>
-  <testcase name="agedBrieQualityIncrementsWhenQualityUnder0()" classname="com.gildedrose.QualityBoundariesTest" time="0.0"/>
+  <testcase name="dexterityVestQualityDoesntDropUnder0()" classname="com.gildedrose.QualityBoundariesTest" time="0.012"/>
+  <testcase name="backStagePassQualityDoesntGoAbove50WhenSellInUnder10Above5()" classname="com.gildedrose.QualityBoundariesTest" time="0.001"/>
+  <testcase name="backStagePassQualityDoesntGoAbove50WhenSellInAbove10()" classname="com.gildedrose.QualityBoundariesTest" time="0.001"/>
+  <testcase name="agedBrieQualityIncrementsWhenQualityUnder0()" classname="com.gildedrose.QualityBoundariesTest" time="0.001"/>
   <testcase name="backStagePassQualityDoesntDropUnder0()" classname="com.gildedrose.QualityBoundariesTest" time="0.0"/>
   <testcase name="backStagePassQualityDoesntGoAbove50WhenSellInUnder5Above0()" classname="com.gildedrose.QualityBoundariesTest" time="0.0"/>
   <testcase name="agedBrieQualityDoesntGoAbove50()" classname="com.gildedrose.QualityBoundariesTest" time="0.0"/>

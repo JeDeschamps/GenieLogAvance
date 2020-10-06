@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.SellInLossTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-09-29T19:56:18" hostname="LAPTOP-7EIT0NTC" time="0.003">
+<testsuite name="com.gildedrose.SellInLossTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-10-06T14:23:41" hostname="turing.local.isima.fr" time="0.002">
   <properties/>
   <testcase name="sulfurasSellInDoesntChange()" classname="com.gildedrose.SellInLossTest" time="0.0"/>
   <testcase name="agedBrieSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.0"/>
-  <testcase name="backStagePassSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.001"/>
-  <testcase name="dexterityVestSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.001"/>
+  <testcase name="backStagePassSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.0"/>
+  <testcase name="dexterityVestSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.0"/>
   <testcase name="elixirSellInUpgrade()" classname="com.gildedrose.SellInLossTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

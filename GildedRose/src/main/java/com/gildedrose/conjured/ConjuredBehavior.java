@@ -32,11 +32,11 @@ public class ConjuredBehavior implements Behavior {
    */
   public void updateItemQuality(Item it) {
     final String strConjured = "Conjured ";
-    final String str = it.getName().replace(strConjured, "");
-    it.setName(str);
+    final String str = it.name.replace(strConjured, "");
+    it.name = str;
     final Behavior normalBehavior = BehaviorFactory.getItemBehavior(it);
     normalBehavior.updateItemQuality(it);
     normalBehavior.updateItemQuality(it);
-    it.setName(strConjured + it.getName());
+    it.name = strConjured + it.name;
   }
 }

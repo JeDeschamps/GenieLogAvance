@@ -30,7 +30,7 @@ class ExpiredDegradationTest {
     final Item[] items = new Item[] {new Item("Backstage passes to a TAFKAL80ETC concert", 0, 20) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(0));
+    assertThat(testitem.items[0].quality, is(0));
   }
 
   @Test
@@ -38,7 +38,7 @@ class ExpiredDegradationTest {
     final Item[] items = new Item[] {new Item(dexterityVest, -1, 20) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(18));
+    assertThat(testitem.items[0].quality, is(18));
   }
 
   @Test
@@ -46,7 +46,7 @@ class ExpiredDegradationTest {
     final Item[] items = new Item[] {new Item(elixirMongoose, -1, 7) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(5));
+    assertThat(testitem.items[0].quality, is(5));
   }
 
   @Test
@@ -54,14 +54,14 @@ class ExpiredDegradationTest {
     final Item[] items = new Item[] {new Item(agedBrie, -1, 0) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(2));
+    assertThat(testitem.items[0].quality, is(2));
   }
   @Test
   void agedBrieQualityUpgradeWhenExpiredCapsAt50() {
     final Item[] items = new Item[] {new Item(agedBrie, -1, 49) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(50));
+    assertThat(testitem.items[0].quality, is(50));
   }
 
   @Test
@@ -69,7 +69,7 @@ class ExpiredDegradationTest {
     final Item[] items = new Item[] {new Item("Sulfuras, Hand of Ragnaros", -1, 80) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(80));
+    assertThat(testitem.items[0].quality, is(80));
   }
   /* Qualite ne passe pas en dessous de 0 quand l'item est perime */
   @Test
@@ -77,7 +77,7 @@ class ExpiredDegradationTest {
     final Item[] items = new Item[] {new Item(dexterityVest, -1, 1) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(0));
+    assertThat(testitem.items[0].quality, is(0));
   }
 
   @Test
@@ -85,6 +85,6 @@ class ExpiredDegradationTest {
     final Item[] items = new Item[] {new Item(elixirMongoose, -1, 1)  };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(0));
+    assertThat(testitem.items[0].quality, is(0));
   }
 }

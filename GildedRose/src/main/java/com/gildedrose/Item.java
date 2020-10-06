@@ -65,28 +65,4 @@ public class Item {
   public final String toString() {
     return this.name + this.sellIn + this.quality;
   }
-
-  public final String getName() {
-    return this.name;
-  }
-
-  public final int getSellIn() {
-    return this.sellIn;
-  }
-
-  public final int getQuality() {
-    return this.quality;
-  }
-
-  public final void setName(String newName) {
-    this.name = newName;
-  }
-
-  public final void setSellIn(int newSellIn) {
-    this.sellIn = newSellIn;
-  }
-
-  public final void setQuality(int newQuality) {
-    this.quality = newQuality;
-  }
 }

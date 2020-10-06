@@ -31,7 +31,7 @@ class ConjuredTest {
     final Item[] items = new Item[] {new Item(conjuredDexterityVest, 5, 20) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(18));
+    assertThat(testitem.items[0].quality, is(18));
   }
 
   @Test
@@ -39,14 +39,14 @@ class ConjuredTest {
     final Item[] items = new Item[] {new Item(conjuredDexterityVest, -5, 20) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(16));
+    assertThat(testitem.items[0].quality, is(16));
   }
   @Test
   void conjuredSulfurasQualityUpgrade() {
     final Item[] items = new Item[] {new Item(conjuredSulfuras, 5, 80)  };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(80));
+    assertThat(testitem.items[0].quality, is(80));
   }
 
   @Test
@@ -54,7 +54,7 @@ class ConjuredTest {
     final Item[] items = new Item[] {new Item(conjuredSulfuras, -5, 80)  };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(80));
+    assertThat(testitem.items[0].quality, is(80));
   }
 
   @Test
@@ -62,7 +62,7 @@ class ConjuredTest {
     final Item[] items = new Item[] {new Item("Conjured Elixir of the Mongoose", 5, 7) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(5));
+    assertThat(testitem.items[0].quality, is(5));
   }
 
   @Test
@@ -70,7 +70,7 @@ class ConjuredTest {
     final Item[] items = new Item[] {new Item("Conjured Aged Brie", 2, 0) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(2));
+    assertThat(testitem.items[0].quality, is(2));
   }
 
   @Test
@@ -78,7 +78,7 @@ class ConjuredTest {
     final Item[] items = new Item[] {new Item(conjuredBackstagePass, 15, 20) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(22));
+    assertThat(testitem.items[0].quality, is(22));
   }
 
   @Test
@@ -86,7 +86,7 @@ class ConjuredTest {
     final Item[] items = new Item[] {new Item(conjuredBackstagePass, 10, 20) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(24));
+    assertThat(testitem.items[0].quality, is(24));
   }
 
   @Test
@@ -94,13 +94,13 @@ class ConjuredTest {
     final Item[] items = new Item[] {new Item(conjuredBackstagePass, 1, 20) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(26));
+    assertThat(testitem.items[0].quality, is(26));
   }
   @Test
   void conjuredBackstagePassQualityUpgradeSellInUnder5Above0CapsAt50() {
     final Item[] items = new Item[] {new Item(conjuredBackstagePass, 1, 46) };
     final GildedRose testitem = new GildedRose(items);
     testitem.updateQuality();
-    assertThat(testitem.items[0].getQuality(), is(50));
+    assertThat(testitem.items[0].quality, is(50));
   }
 }

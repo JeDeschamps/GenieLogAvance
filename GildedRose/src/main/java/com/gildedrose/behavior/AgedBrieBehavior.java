@@ -40,10 +40,10 @@ public class AgedBrieBehavior implements Behavior {
    * @param it
    */
   public void updateItemQuality(Item it) {
-    if (it.getQuality() < maxquality) {
-      it.setQuality(it.getQuality() + normalupgrade);
-      if (it.getQuality() < maxquality && isExpired(it)) {
-        it.setQuality(it.getQuality() + normalupgrade);
+    if (it.quality < maxquality) {
+      it.quality = it.quality + normalupgrade;
+      if (it.quality < maxquality && isExpired(it)) {
+        it.quality = it.quality + normalupgrade;
       }
     }
   }

@@ -48,12 +48,12 @@ public class BackstagePassBehavior implements Behavior {
    * @param it
    */
   public void updateItemQuality(Item it) {
-    final int tmp = it.getSellIn();
+    final int tmp = it.sellIn;
     final int inc = tmp > daysRemaining10 ? 1 : tmp <= daysRemaining10 && tmp > daysRemaining5 ? 2 : 3;
     if (isExpired(it)) {
-      it.setQuality(0);
+      it.quality = 0;
     } else {
-      it.setQuality((it.getQuality() + inc) > maxquality ? 50 : it.getQuality() + inc);
+      it.quality = (it.quality + inc) > maxquality ? 50 : it.quality + inc;
     }
   }
 
