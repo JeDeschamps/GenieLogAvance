@@ -1,6 +1,7 @@
 /**.
- * Package ne contenant qu'une seule class, le comportement
+ * Package ne contenant qu'une seule classe, le comportement
  * des items conjured.
+ * C'est une simple implementation de l'interface behavior
  *
  * Ajout de la fonctionnalite qu'un item puisse etre conjured
  * par rapport au code de base. Tests fournis.

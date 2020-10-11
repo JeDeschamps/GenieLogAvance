@@ -30,7 +30,6 @@ public class DefaultBehavior implements Behavior {
   private final transient int normalupgrade = 1;
 
   /** .
-   * Methode d'augmentation de la qualite de l'item
    * Augmentation par defaut
    *
    * @see Item

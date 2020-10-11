@@ -21,15 +21,13 @@ public final class BehaviorFactory {
   /**
    * Constructeur prive, cree uniquement pour le checkstyle
    *
-   * Corps de methode vide
    */
   private BehaviorFactory() {
 
   }
 
   /**.
-   * Methode statique de la fabrique
-   * Renvoie un comportement par defaut en cas d'item inconnu ou pas implemente
+   * Methode de la factory
    *
    *
    * @see Behavior

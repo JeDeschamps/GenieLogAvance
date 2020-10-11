@@ -6,8 +6,6 @@ import com.gildedrose.behavior.*;
  *  - Date de peremption
  *  - Qualite
  *
- * Fournit accesseurs/setters sur chacun des attributs
- * @version 2.0
  */
 
 
@@ -37,18 +35,18 @@ public class Item {
   /** .
    * Constructeur Item
    *
-   * @param nameConstruct nom 
-   * @param sellInConstruct sellIn
-   * @param qualityConstruct qualite
+   * @param name nom 
+   * @param sellIn jours avant peremption
+   * @param quality qualite
    *
    * @see Item#name
    * @see Item#sellIn
    * @see Item#quality
    */
-  public Item(String nameConstruct, int sellInConstruct, int qualityConstruct) {
-    this.name = nameConstruct;
-    this.sellIn = sellInConstruct;
-    this.quality = qualityConstruct;
+  public Item(String name, int sellIn, int quality) {
+    this.name = name;
+    this.sellIn = sellIn;
+    this.quality = quality;
   }
 
 

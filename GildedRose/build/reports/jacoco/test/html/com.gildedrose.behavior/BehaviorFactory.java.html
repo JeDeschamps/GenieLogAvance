@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BehaviorFactory.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">gilded-rose-kata</a> &gt; <a href="index.source.html" class="el_package">com.gildedrose.behavior</a> &gt; <span class="el_source">BehaviorFactory.java</span></div><h1>BehaviorFactory.java</h1><pre class="source lang-java linenums">package com.gildedrose.behavior;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BehaviorFactory.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">gilded-rose-kata</a> &gt; <a href="index.source.html" class="el_package">com.gildedrose.behavior</a> &gt; <span class="el_source">BehaviorFactory.java</span></div><h1>BehaviorFactory.java</h1><pre class="source lang-java linenums">package com.gildedrose.behavior;
 import com.gildedrose.*;
 import com.gildedrose.conjured.*;
 
@@ -21,15 +21,13 @@ public final class BehaviorFactory {
   /**
    * Constructeur prive, cree uniquement pour le checkstyle
    *
-   * Corps de methode vide
    */
   private BehaviorFactory() {
 
   }
 
   /**.
-   * Methode statique de la fabrique
-   * Renvoie un comportement par defaut en cas d'item inconnu ou pas implemente
+   * Methode de la factory
    *
    *
    * @see Behavior
@@ -39,27 +37,27 @@ public final class BehaviorFactory {
    * @return Un objet behavior, comportement associe a l'objet
    */
   public static Behavior getItemBehavior(Item it) {
-<span class="fc" id="L42">    final String str = it.name.substring(0, 8);</span>
-<span class="fc bfc" id="L43" title="All 7 branches covered.">    switch (str) {</span>
+<span class="fc" id="L40">    final String str = it.name.substring(0, 8);</span>
+<span class="fc bfc" id="L41" title="All 7 branches covered.">    switch (str) {</span>
       case &quot;+5 Dexte&quot;:
-<span class="fc" id="L45">        return new DefaultBehavior();</span>
+<span class="fc" id="L43">        return new DefaultBehavior();</span>
 
       case &quot;Aged Bri&quot;:
-<span class="fc" id="L48">        return new AgedBrieBehavior();</span>
+<span class="fc" id="L46">        return new AgedBrieBehavior();</span>
 
       case &quot;Elixir o&quot;:
-<span class="fc" id="L51">        return new DefaultBehavior();</span>
+<span class="fc" id="L49">        return new DefaultBehavior();</span>
 
       case &quot;Sulfuras&quot;:
-<span class="fc" id="L54">        return new SulfurasBehavior();</span>
+<span class="fc" id="L52">        return new SulfurasBehavior();</span>
       case &quot;Backstag&quot;:
-<span class="fc" id="L56">        return new BackstagePassBehavior();</span>
+<span class="fc" id="L54">        return new BackstagePassBehavior();</span>
       case &quot;Conjured&quot;:
-<span class="fc" id="L58">        return new ConjuredBehavior();</span>
+<span class="fc" id="L56">        return new ConjuredBehavior();</span>
       default:
         break;
     }
-<span class="fc" id="L62">    return new DefaultBehavior();</span>
+<span class="fc" id="L60">    return new DefaultBehavior();</span>
   }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

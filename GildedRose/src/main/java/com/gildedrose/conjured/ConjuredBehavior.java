@@ -9,6 +9,7 @@ import com.gildedrose.behavior.*;
  *
  * Les changements de qualite sont doubles quand l'item est conjured
  *
+ *
  * @see Item
  * @see Behavior
  * @see Behavior#updateItemSellIn(Item)
@@ -19,10 +20,6 @@ import com.gildedrose.behavior.*;
 
 public class ConjuredBehavior implements Behavior {
   /** .
-   * Modifie la qualite des items conjures
-   * Reutilise l'implementation du Behavior de l'item concerne
-   * Respecte les contraintes de qualite existantes
-   *
    * @see Item
    * @see Behavior
    * @see Behavior#updateItemQuality(Item)

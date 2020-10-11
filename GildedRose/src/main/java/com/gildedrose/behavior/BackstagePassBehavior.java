@@ -39,8 +39,6 @@ public class BackstagePassBehavior implements Behavior {
   private final transient  int daysRemaining5 = 5;
 
   /** .
-   * Methode d'augmentation de la qualite de l'item
-   * Si l'item est perime, qualite nulle
    *
    * @see Item
    * @see Behavior

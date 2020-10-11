@@ -20,7 +20,7 @@ class GildedRose {
    * Collection des items de la taverne
    * Mise a jour de leurs valeurs dans les méthodes
    *
-   * @see GIldedRose#updateQualityForItem
+   * @see GIldedRose#updateQualityAndSellIn
    * @see Behavior
    */
   transient Item[] items;
@@ -37,20 +37,19 @@ class GildedRose {
   }
 
   /**
-   * Mise a jour de la collection d'objet
-   * Fait selon le comportement approprie a l'objet
+   * Mise a jour de la collection d'objet en attribut
    *
    * @see Item
-   * @see GildedRose#updateQualityForItem(Item)
+   * @see GildedRose#updateQualityAndSellIn(Item)
    */
   public void updateQuality() {
     for (Item it : this.items) {
-      updateQualityForItem(it);
+      updateQualityAndSellIn(it);
     }
   }
 
   /**
-   * Mise a jour des valeurs sellIn et quality de l'objet
+   * Mise a jour des valeurs sellIn et quality d'un objet
    *
    * @see Item
    * @see Behavior
@@ -58,7 +57,7 @@ class GildedRose {
    *
    * @param it
    */
-  public void updateQualityForItem(Item it) {
+  private void updateQualityAndSellIn(Item it) {
     final Behavior itemBehavior = BehaviorFactory.getItemBehavior(it);
     itemBehavior.updateItemQuality(it);
     itemBehavior.updateItemSellIn(it);

@@ -2,8 +2,9 @@ package com.gildedrose.behavior;
 import com.gildedrose.*;
 
 /** .
- * L'interface Behavior est l'abstraction que de pattern strategy
+ * L'interface Behavior est l'abstraction de notre pattern strategy
  * La famille d'algorithme couverte par la strategie implemente uniquement cette interface
+ * L'utilisation d'une interface permet d'avoir un decouplage fort
  *
  * L'interface couvre le comportement de degradation de la qualite et du sellIn de l'item selon les Items
  *
@@ -29,7 +30,7 @@ public interface Behavior {
    *
    * @param it
    *
-   * @implNote Implementation par defaut, rarement redefinie
+   * Implementation par defaut car rarement redefinie par les items
    *
    * @see Item#sellIn
    */
@@ -45,7 +46,7 @@ public interface Behavior {
    * @param it
    * @return si l'item est expire
    *
-   * @see Item#quality
+   * @see Item#sellIn
    */
   default boolean isExpired(Item it) {
     return it.sellIn <= 0;

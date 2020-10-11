@@ -31,7 +31,6 @@ public class AgedBrieBehavior implements Behavior {
   private final transient int normalupgrade = 1;
 
   /** .
-   * Methode d'augmentation de la qualite de l'item
    * L'item voit sa qualite augmenter meme si instancie avec une qualite negative
    *
    * @see Item
