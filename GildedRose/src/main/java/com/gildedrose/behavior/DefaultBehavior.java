@@ -2,8 +2,8 @@ package com.gildedrose.behavior;
 
 import com.gildedrose.*;
 
-/** .
- * Classe implementant le comportement par defaut des items
+/**
+ * Classe implementant le comportement par defaut des items.
  * Ne redefinit pas updateSellIn
  *
  *
@@ -29,8 +29,8 @@ public class DefaultBehavior implements Behavior {
    */
   private final transient int normalupgrade = 1;
 
-  /** .
-   * Augmentation par defaut
+  /**
+   * Degradation par defaut de la qualite.
    *
    * @see Item
    * @see Behavior

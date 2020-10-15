@@ -1,7 +1,8 @@
 package com.gildedrose;
 import com.gildedrose.behavior.*;
-/** .
- * Classe representant un item, 3 attributs :
+/**
+ * Classe representant un item, fournie dans le kata.
+ * 3 attributs :
  *  - Nom
  *  - Date de peremption
  *  - Qualite
@@ -10,21 +11,21 @@ import com.gildedrose.behavior.*;
 
 
 public class Item {
-  /** .
-   * Nom de l'item
+  /**
+   * Nom de l'item.
    */
   public String name;
 
-  /** .
-   * Jours restants avant peremption
-   * Valeurs negative ou nulle si l'item est perime
+  /**
+   * Jours restants avant peremption.
+   * Valeur negative ou nulle si l'item est perime
    *
    * @see Behavior#isExpired(Item)
    */
   public int sellIn;
 
-  /** .
-   * Qualite de l'item
+  /**
+   * Qualite de l'item.
    * Valeur devant être comprise theoriquement entre 0 et 50
    * Sulfuras a une qualite fixe a 80 theoriquement
    *
@@ -32,10 +33,10 @@ public class Item {
    */
   public int quality;
 
-  /** .
-   * Constructeur Item
+  /**
+   * Constructeur Item.
    *
-   * @param name nom 
+   * @param name nom
    * @param sellIn jours avant peremption
    * @param quality qualite
    *

@@ -1,14 +1,14 @@
-com/gildedrose/package-info.java
- com.gildedrose.package-info
 com/gildedrose/SellInLossTest.java
  com.gildedrose.SellInLossTest
+com/gildedrose/package-info.java
+ com.gildedrose.package-info
 com/gildedrose/NormalDegradationTest.java
  com.gildedrose.NormalDegradationTest
-com/gildedrose/BehaviorClassInstantiationTest.java
- com.gildedrose.BehaviorClassInstantiationTest
-com/gildedrose/QualityBoundariesTest.java
- com.gildedrose.QualityBoundariesTest
 com/gildedrose/ConjuredTest.java
  com.gildedrose.ConjuredTest
+com/gildedrose/QualityBoundariesTest.java
+ com.gildedrose.QualityBoundariesTest
+com/gildedrose/BehaviorClassInstantiationTest.java
+ com.gildedrose.BehaviorClassInstantiationTest
 com/gildedrose/ExpiredDegradationTest.java
  com.gildedrose.ExpiredDegradationTest

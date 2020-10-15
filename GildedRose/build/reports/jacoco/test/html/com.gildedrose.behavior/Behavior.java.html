@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Behavior.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">gilded-rose-kata</a> &gt; <a href="index.source.html" class="el_package">com.gildedrose.behavior</a> &gt; <span class="el_source">Behavior.java</span></div><h1>Behavior.java</h1><pre class="source lang-java linenums">package com.gildedrose.behavior;
 import com.gildedrose.*;
 
-/** .
- * L'interface Behavior est l'abstraction de notre pattern strategy
+/**
+ * Interface du comportement de mise a jour des objets.
+ * Fournit 2 methodes :
+ * - updateItemQuality qui est la maniere dont se degrade la qualite de l'item
+ * - updateItemSellIn
+ * - isExpired qui sert a donner un espace de nom a un test tres utilise dans les
+ *   classes qui implementent cette interface
+ *
+ * updateItemSellIn est une methode par defaut car tres rarement differente de celle de base
+ * isExpired est une methode par defaut jamais redefinie
+ *
  * La famille d'algorithme couverte par la strategie implemente uniquement cette interface
  * L'utilisation d'une interface permet d'avoir un decouplage fort
- *
- * L'interface couvre le comportement de degradation de la qualite et du sellIn de l'item selon les Items
  *
  * Interface implementee par tous les comportements d'item
  *
@@ -16,8 +23,8 @@ import com.gildedrose.*;
  */
 
 public interface Behavior {
-  /** .
-   * Methode de degradation de la qualite de l'item
+  /**
+   * Methode de degradation de la qualite de l'item.
    *
    * @param it
    *
@@ -25,8 +32,8 @@ public interface Behavior {
    */
   void updateItemQuality(Item it);
 
-  /** .
-   * Methode de degradation du sellIn de l'item
+  /**
+   * Methode de degradation du sellIn de l'item.
    *
    * @param it
    *
@@ -35,13 +42,15 @@ public interface Behavior {
    * @see Item#sellIn
    */
   default void updateItemSellIn(Item it) {
-<span class="pc bpc" id="L38" title="1 of 2 branches missed.">    if (!it.name.equals(&quot;Sulfuras, Hand of Ragnaros&quot;)) {</span>
-<span class="fc" id="L39">      it.sellIn = it.sellIn - 1;</span>
+<span class="pc bpc" id="L45" title="1 of 2 branches missed.">    if (!it.name.equals(&quot;Sulfuras, Hand of Ragnaros&quot;)) {</span>
+<span class="fc" id="L46">      it.sellIn = it.sellIn - 1;</span>
     }
-<span class="fc" id="L41">  }</span>
+<span class="fc" id="L48">  }</span>
 
-  /** .
-   * Espace de nom pour le test de peremption de l'item
+  /**
+   * Espace de nom pour le test de peremption de l'item.
+   *
+   * Recouvre un test
    *
    * @param it
    * @return si l'item est expire
@@ -49,7 +58,7 @@ public interface Behavior {
    * @see Item#sellIn
    */
   default boolean isExpired(Item it) {
-<span class="fc bfc" id="L52" title="All 2 branches covered.">    return it.sellIn &lt;= 0;</span>
+<span class="fc bfc" id="L61" title="All 2 branches covered.">    return it.sellIn &lt;= 0;</span>
   }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

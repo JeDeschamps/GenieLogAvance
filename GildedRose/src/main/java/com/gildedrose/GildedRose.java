@@ -3,7 +3,8 @@ import com.gildedrose.behavior.*;
 import com.gildedrose.conjured.*;
 
 /**
- * Classe representant la taverne, 1 attribut :
+ * Classe representant la taverne.
+ * 1 attribut :
  *  - Tableau d'items
  *
  * Va effectuer les operations de mise a jour de qualite et de sellIn sur tous ses items
@@ -17,7 +18,7 @@ import com.gildedrose.conjured.*;
 
 class GildedRose {
   /**
-   * Collection des items de la taverne
+   * Collection des items de la taverne.
    * Mise a jour de leurs valeurs dans les méthodes
    *
    * @see GIldedRose#updateQualityAndSellIn
@@ -26,7 +27,7 @@ class GildedRose {
   transient Item[] items;
 
   /**
-   * Constructeur de GildedRose
+   * Constructeur de GildedRose.
    *
    * @see GildedRose#items
    *
@@ -37,7 +38,7 @@ class GildedRose {
   }
 
   /**
-   * Mise a jour de la collection d'objet en attribut
+   * Mise a jour de la collection d'objet en attribut.
    *
    * @see Item
    * @see GildedRose#updateQualityAndSellIn(Item)
@@ -49,7 +50,7 @@ class GildedRose {
   }
 
   /**
-   * Mise a jour des valeurs sellIn et quality d'un objet
+   * Mise a jour des valeurs sellIn et quality d'un objet.
    *
    * @see Item
    * @see Behavior

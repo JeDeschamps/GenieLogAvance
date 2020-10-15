@@ -6,9 +6,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 /**
- * Cette classe va tester le comportement de degradation / augmentation
- * de qualite pour les items quand ils sont expires, degradation / augmentation
- * double.
+ * Cette classe teste le comportement de degradation / augmentation de qualite pour les items quand ils sont expires.
+ * degradation / augmentation double
  * Tests effectues :
  * - La qualite de backstage pass tombe a 0 quand perime
  * - Degradation de qualite de dexterity vest perime

@@ -6,8 +6,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 /**
- * Cette classe teste que le sellIn decremente lors de la
- * mise a jour des items
+ * Cette classe teste que le sellIn decremente lors de la mise a jour des items.
  * Tests effectues :
  * - Decrementation du sellIn pour Aged Brie
  * - Decrementation du sellIn pour l'elixir

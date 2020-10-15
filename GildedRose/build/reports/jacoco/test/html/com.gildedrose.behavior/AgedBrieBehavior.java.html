@@ -2,8 +2,8 @@
 
 import com.gildedrose.*;
 
-/** .
- * Classe implementant le comportement particulier de degradation de l'item AgedBrie
+/**
+ * Classe implementant le comportement particulier de degradation de l'item AgedBrie.
  * Ne redefinit pas updateSellIn
  *
  * La qualite de l'item augmente avec le temps
@@ -30,7 +30,9 @@ import com.gildedrose.*;
    */
 <span class="fc" id="L31">  private final transient int normalupgrade = 1;</span>
 
-  /** .
+  /**
+   * Augmentation de la qualite de AgedBrie.
+   *
    * L'item voit sa qualite augmenter meme si instancie avec une qualite negative
    *
    * @see Item
@@ -39,12 +41,12 @@ import com.gildedrose.*;
    * @param it
    */
   public void updateItemQuality(Item it) {
-<span class="fc bfc" id="L42" title="All 2 branches covered.">    if (it.quality &lt; maxquality) {</span>
-<span class="fc" id="L43">      it.quality = it.quality + normalupgrade;</span>
-<span class="fc bfc" id="L44" title="All 4 branches covered.">      if (it.quality &lt; maxquality &amp;&amp; isExpired(it)) {</span>
-<span class="fc" id="L45">        it.quality = it.quality + normalupgrade;</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">    if (it.quality &lt; maxquality) {</span>
+<span class="fc" id="L45">      it.quality = it.quality + normalupgrade;</span>
+<span class="fc bfc" id="L46" title="All 4 branches covered.">      if (it.quality &lt; maxquality &amp;&amp; isExpired(it)) {</span>
+<span class="fc" id="L47">        it.quality = it.quality + normalupgrade;</span>
       }
     }
-<span class="fc" id="L48">  }</span>
+<span class="fc" id="L50">  }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

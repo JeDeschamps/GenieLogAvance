@@ -3,7 +3,8 @@ import com.gildedrose.behavior.*;
 import com.gildedrose.conjured.*;
 
 /**
- * Classe representant la taverne, 1 attribut :
+ * Classe representant la taverne.
+ * 1 attribut :
  *  - Tableau d'items
  *
  * Va effectuer les operations de mise a jour de qualite et de sellIn sur tous ses items
@@ -17,7 +18,7 @@ import com.gildedrose.conjured.*;
 
 class GildedRose {
   /**
-   * Collection des items de la taverne
+   * Collection des items de la taverne.
    * Mise a jour de leurs valeurs dans les méthodes
    *
    * @see GIldedRose#updateQualityAndSellIn
@@ -26,30 +27,30 @@ class GildedRose {
   transient Item[] items;
 
   /**
-   * Constructeur de GildedRose
+   * Constructeur de GildedRose.
    *
    * @see GildedRose#items
    *
    * @param itemsConstructor
    */
-<span class="fc" id="L35">  GildedRose(Item[] itemsConstructor) {</span>
-<span class="fc" id="L36">    this.items = itemsConstructor;</span>
-<span class="fc" id="L37">  }</span>
+<span class="fc" id="L36">  GildedRose(Item[] itemsConstructor) {</span>
+<span class="fc" id="L37">    this.items = itemsConstructor;</span>
+<span class="fc" id="L38">  }</span>
 
   /**
-   * Mise a jour de la collection d'objet en attribut
+   * Mise a jour de la collection d'objet en attribut.
    *
    * @see Item
    * @see GildedRose#updateQualityAndSellIn(Item)
    */
   public void updateQuality() {
-<span class="fc bfc" id="L46" title="All 2 branches covered.">    for (Item it : this.items) {</span>
-<span class="fc" id="L47">      updateQualityAndSellIn(it);</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">    for (Item it : this.items) {</span>
+<span class="fc" id="L48">      updateQualityAndSellIn(it);</span>
     }
-<span class="fc" id="L49">  }</span>
+<span class="fc" id="L50">  }</span>
 
   /**
-   * Mise a jour des valeurs sellIn et quality d'un objet
+   * Mise a jour des valeurs sellIn et quality d'un objet.
    *
    * @see Item
    * @see Behavior
@@ -58,9 +59,9 @@ class GildedRose {
    * @param it
    */
   private void updateQualityAndSellIn(Item it) {
-<span class="fc" id="L61">    final Behavior itemBehavior = BehaviorFactory.getItemBehavior(it);</span>
-<span class="fc" id="L62">    itemBehavior.updateItemQuality(it);</span>
-<span class="fc" id="L63">    itemBehavior.updateItemSellIn(it);</span>
-<span class="fc" id="L64">  }</span>
+<span class="fc" id="L62">    final Behavior itemBehavior = BehaviorFactory.getItemBehavior(it);</span>
+<span class="fc" id="L63">    itemBehavior.updateItemQuality(it);</span>
+<span class="fc" id="L64">    itemBehavior.updateItemSellIn(it);</span>
+<span class="fc" id="L65">  }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

@@ -2,8 +2,8 @@ package com.gildedrose.behavior;
 
 import com.gildedrose.*;
 
-/** .
- * Classe implementant le comportement particulier de degradation de l'item AgedBrie
+/**
+ * Classe implementant le comportement particulier de degradation de l'item AgedBrie.
  * Ne redefinit pas updateSellIn
  *
  * La qualite de l'item augmente avec le temps
@@ -30,7 +30,9 @@ public class AgedBrieBehavior implements Behavior {
    */
   private final transient int normalupgrade = 1;
 
-  /** .
+  /**
+   * Augmentation de la qualite de AgedBrie.
+   *
    * L'item voit sa qualite augmenter meme si instancie avec une qualite negative
    *
    * @see Item

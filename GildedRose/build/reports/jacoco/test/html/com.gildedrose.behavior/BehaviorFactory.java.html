@@ -1,34 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BehaviorFactory.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">gilded-rose-kata</a> &gt; <a href="index.source.html" class="el_package">com.gildedrose.behavior</a> &gt; <span class="el_source">BehaviorFactory.java</span></div><h1>BehaviorFactory.java</h1><pre class="source lang-java linenums">package com.gildedrose.behavior;
+import java.util.HashMap;
+
 import com.gildedrose.*;
 import com.gildedrose.conjured.*;
 
 /**
- * Notre fabrique d'objets Behavior
+ * Notre fabrique d'objets Behavior.
+ *
  *
  * Instancie dynamiquement le comportement approprie a l'objet
  * qu'on passe en parametre a notre unique methode.
- * Utilise un switch sur le nom de l'item dans cette version.
- * --&gt; Trop de return au sein d'une meme fonction
+ *
+ * Une HashMap statique contient toutes les entrees possibles de noms d'items
+ * Rajouter un item avec un nouveau comportement implique une nouvelle entree
+ * dans la HashMap
  *
  * Methode statique, pas besoin d'instancier la factory pour l'utiliser
  *
  * @see Behavior
  * @see Item
  *
- * @version 1.0
+ * @version 2.0
  */
 public final class BehaviorFactory {
+
+  private static HashMap&lt;String, Behavior&gt; behaviorMap;
+  static {
+<span class="fc" id="L29">    behaviorMap = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L30">    behaviorMap.put(&quot;+5 Dexte&quot;, new DefaultBehavior());</span>
+<span class="fc" id="L31">    behaviorMap.put(&quot;Aged Bri&quot;, new AgedBrieBehavior());</span>
+<span class="fc" id="L32">    behaviorMap.put(&quot;Elixir o&quot;, new DefaultBehavior());</span>
+<span class="fc" id="L33">    behaviorMap.put(&quot;Sulfuras&quot;, new SulfurasBehavior());</span>
+<span class="fc" id="L34">    behaviorMap.put(&quot;Backstag&quot;, new BackstagePassBehavior());</span>
+<span class="fc" id="L35">    behaviorMap.put(&quot;Conjured&quot;, new ConjuredBehavior());</span>
+<span class="fc" id="L36">  }</span>
   /**
-   * Constructeur prive, cree uniquement pour le checkstyle
+   * Constructeur prive, cree uniquement pour le checkstyle.
    *
    */
   private BehaviorFactory() {
 
   }
 
-  /**.
-   * Methode de la factory
+  /**
+   * Methode de la factory.
    *
+   * On utilise les 8 premiers characteres du nom de l'item
+   * On fait ca parce que sinon il faudrait gerer les cas des items
+   * conjured avec un if externe
+   * Aussi utile pour avoir des backstage pass pour n'importe
+   * quel concert
+   *
+   * Retourne un comportement par defaut si l'item est inconnu
    *
    * @see Behavior
    * @see Item
@@ -37,27 +60,12 @@ public final class BehaviorFactory {
    * @return Un objet behavior, comportement associe a l'objet
    */
   public static Behavior getItemBehavior(Item it) {
-<span class="fc" id="L40">    final String str = it.name.substring(0, 8);</span>
-<span class="fc bfc" id="L41" title="All 7 branches covered.">    switch (str) {</span>
-      case &quot;+5 Dexte&quot;:
-<span class="fc" id="L43">        return new DefaultBehavior();</span>
-
-      case &quot;Aged Bri&quot;:
-<span class="fc" id="L46">        return new AgedBrieBehavior();</span>
-
-      case &quot;Elixir o&quot;:
-<span class="fc" id="L49">        return new DefaultBehavior();</span>
-
-      case &quot;Sulfuras&quot;:
-<span class="fc" id="L52">        return new SulfurasBehavior();</span>
-      case &quot;Backstag&quot;:
-<span class="fc" id="L54">        return new BackstagePassBehavior();</span>
-      case &quot;Conjured&quot;:
-<span class="fc" id="L56">        return new ConjuredBehavior();</span>
-      default:
-        break;
+<span class="fc" id="L63">    final String str = it.name.substring(0, 8);</span>
+<span class="fc bfc" id="L64" title="All 2 branches covered.">    if (behaviorMap.containsKey(str)) {</span>
+<span class="fc" id="L65">      return behaviorMap.get(str);</span>
+    } else {
+<span class="fc" id="L67">      return new DefaultBehavior();</span>
     }
-<span class="fc" id="L60">    return new DefaultBehavior();</span>
   }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

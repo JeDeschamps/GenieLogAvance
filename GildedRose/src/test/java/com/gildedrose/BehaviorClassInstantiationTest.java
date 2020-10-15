@@ -8,9 +8,8 @@ import static org.hamcrest.Matchers.*;
 import com.gildedrose.behavior.*;
 import com.gildedrose.conjured.*;
 
-/** .
- * Cette classe a pour seul objectif de tester la bonne instanciation des classes
- * au travers de la factory de comportement.
+/**
+ * Cette classe va tester la bonne instanciation des classes au travers de la factory de comportement.
  * On effectue les tests suivants :
  * - Bonne instanciation de la classe comportement par défaut
  *   quand l'item est une dexterity vest/elixir/item qui n'existe pas

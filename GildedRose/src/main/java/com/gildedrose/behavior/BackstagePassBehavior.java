@@ -1,8 +1,8 @@
 package com.gildedrose.behavior;
 import com.gildedrose.*;
 
-/** .
- * Classe implementant le comportement particulier de degradation de l'item Backstage Pass
+/**
+ * Classe implementant le comportement particulier de degradation de l'item Backstage Pass.
  * Ne redefinit pas updateSellIn
  *
  * La qualite de l'item augmente differement selon le nombre de jours restants
@@ -38,7 +38,8 @@ public class BackstagePassBehavior implements Behavior {
   private final transient  int daysRemaining10 = 10;
   private final transient  int daysRemaining5 = 5;
 
-  /** .
+  /**
+   * Update de la qualite selon le nombre de jours restants avant le concert.
    *
    * @see Item
    * @see Behavior

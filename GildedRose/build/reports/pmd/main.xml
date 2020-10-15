@@ -2,21 +2,21 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.23.0" timestamp="2020-10-11T13:05:34.501">
+    version="6.23.0" timestamp="2020-10-15T17:41:34.928">
 <file name="/mnt/c/Travail/GenieLogM1/GenieLogAvance/GildedRose/src/main/java/com/gildedrose/Item.java">
-<violation beginline="16" endline="16" begincolumn="17" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="com.gildedrose" class="Item" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+<violation beginline="17" endline="17" begincolumn="17" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="com.gildedrose" class="Item" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
 </violation>
-<violation beginline="24" endline="24" begincolumn="14" endcolumn="19" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="com.gildedrose" class="Item" variable="sellIn" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+<violation beginline="25" endline="25" begincolumn="14" endcolumn="19" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="com.gildedrose" class="Item" variable="sellIn" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
 </violation>
-<violation beginline="33" endline="33" begincolumn="14" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="com.gildedrose" class="Item" variable="quality" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+<violation beginline="34" endline="34" begincolumn="14" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="com.gildedrose" class="Item" variable="quality" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
 Found non-transient, non-static member. Please mark as transient or provide accessors.
 </violation>
 </file>
 <file name="/mnt/c/Travail/GenieLogM1/GenieLogAvance/GildedRose/src/main/java/com/gildedrose/behavior/BackstagePassBehavior.java">
-<violation beginline="50" endline="56" begincolumn="15" endcolumn="102" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="com.gildedrose.behavior" class="BackstagePassBehavior" method="updateItemQuality" variable="inc" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
-Found 'DU'-anomaly for variable 'inc' (lines '50'-'56').
+<violation beginline="51" endline="57" begincolumn="15" endcolumn="102" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="com.gildedrose.behavior" class="BackstagePassBehavior" method="updateItemQuality" variable="inc" externalInfoUrl="https://pmd.github.io/pmd-6.23.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'inc' (lines '51'-'57').
 </violation>
 </file>
 </pmd>

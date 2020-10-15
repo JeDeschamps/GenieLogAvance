@@ -6,8 +6,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 /**
- * Cette classe teste le bon comportement de base de degradation / augmentation
- * pour nos differents items
+ * Cette classe teste le bon comportement de base de degradation / augmentation pour nos differents items.
  * Tests effectues :
  * - Test toString retourne bien une string
  * - Degradation de la qualite de dexterity vest

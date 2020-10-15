@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BackstagePassBehavior.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">gilded-rose-kata</a> &gt; <a href="index.source.html" class="el_package">com.gildedrose.behavior</a> &gt; <span class="el_source">BackstagePassBehavior.java</span></div><h1>BackstagePassBehavior.java</h1><pre class="source lang-java linenums">package com.gildedrose.behavior;
 import com.gildedrose.*;
 
-/** .
- * Classe implementant le comportement particulier de degradation de l'item Backstage Pass
+/**
+ * Classe implementant le comportement particulier de degradation de l'item Backstage Pass.
  * Ne redefinit pas updateSellIn
  *
  * La qualite de l'item augmente differement selon le nombre de jours restants
@@ -38,7 +38,8 @@ import com.gildedrose.*;
 <span class="fc" id="L38">  private final transient  int daysRemaining10 = 10;</span>
 <span class="fc" id="L39">  private final transient  int daysRemaining5 = 5;</span>
 
-  /** .
+  /**
+   * Update de la qualite selon le nombre de jours restants avant le concert.
    *
    * @see Item
    * @see Behavior
@@ -46,14 +47,14 @@ import com.gildedrose.*;
    * @param it
    */
   public void updateItemQuality(Item it) {
-<span class="fc" id="L49">    final int tmp = it.sellIn;</span>
-<span class="pc bpc" id="L50" title="1 of 6 branches missed.">    final int inc = tmp &gt; daysRemaining10 ? 1 : tmp &lt;= daysRemaining10 &amp;&amp; tmp &gt; daysRemaining5 ? 2 : 3;</span>
-<span class="fc bfc" id="L51" title="All 2 branches covered.">    if (isExpired(it)) {</span>
-<span class="fc" id="L52">      it.quality = 0;</span>
+<span class="fc" id="L50">    final int tmp = it.sellIn;</span>
+<span class="pc bpc" id="L51" title="1 of 6 branches missed.">    final int inc = tmp &gt; daysRemaining10 ? 1 : tmp &lt;= daysRemaining10 &amp;&amp; tmp &gt; daysRemaining5 ? 2 : 3;</span>
+<span class="fc bfc" id="L52" title="All 2 branches covered.">    if (isExpired(it)) {</span>
+<span class="fc" id="L53">      it.quality = 0;</span>
     } else {
-<span class="fc bfc" id="L54" title="All 2 branches covered.">      it.quality = (it.quality + inc) &gt; maxquality ? 50 : it.quality + inc;</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">      it.quality = (it.quality + inc) &gt; maxquality ? 50 : it.quality + inc;</span>
     }
-<span class="fc" id="L56">  }</span>
+<span class="fc" id="L57">  }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

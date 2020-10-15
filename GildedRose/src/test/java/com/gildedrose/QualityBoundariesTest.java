@@ -8,8 +8,8 @@ import com.gildedrose.behavior.*;
 import static org.hamcrest.Matchers.*;
 
 /**
- * Cette classe effectue les tests d'augmentation / degradation de
- * la qualite selon les items dans les cas proches des limites 0 et 50
+ * Cette classe effectue les tests d'augmentation / degradation de la qualite selon les items.
+ * Dans les cas proches des limites 0 et 50
  * On va verifier que la qualite des items ne peut pas passer en dessous
  * de 0 et au dessus de 50 quand ils sont a ces limites
  * Tests effectues :

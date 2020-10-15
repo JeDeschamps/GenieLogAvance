@@ -8,8 +8,7 @@ import com.gildedrose.behavior.*;
 import static org.hamcrest.Matchers.*;
 
 /**
- * Cette classe va effectuer les tests du comportement de
- * degradation de qualite des items conjured quels qu'ils soient
+ * Cette classe va effectuer les tests du comportement de degradation de qualite des items conjured quels qu'ils soient.
  * Tests effectues :
  * - Degradation de qualite de conjured dexterity vest
  * - Degradation de qualite de conjured dexterity vest perime
