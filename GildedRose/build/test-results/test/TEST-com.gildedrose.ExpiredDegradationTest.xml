@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.ExpiredDegradationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-10-11T11:05:26" hostname="LAPTOP-7EIT0NTC" time="0.006">
+<testsuite name="com.gildedrose.ExpiredDegradationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-10-15T13:48:27" hostname="LAPTOP-7EIT0NTC" time="0.008">
   <properties/>
-  <testcase name="dexterityVestQualityUpgradeWhenExpired()" classname="com.gildedrose.ExpiredDegradationTest" time="0.0"/>
+  <testcase name="dexterityVestQualityUpgradeWhenExpired()" classname="com.gildedrose.ExpiredDegradationTest" time="0.001"/>
   <testcase name="dexterityVestQualityDoesntDropUnder0WhenExpired()" classname="com.gildedrose.ExpiredDegradationTest" time="0.0"/>
   <testcase name="elixirQualityUpgradeWhenExpired()" classname="com.gildedrose.ExpiredDegradationTest" time="0.0"/>
-  <testcase name="agedBrieQualityUpgradeWhenExpiredCapsAt50()" classname="com.gildedrose.ExpiredDegradationTest" time="0.0"/>
+  <testcase name="agedBrieQualityUpgradeWhenExpiredCapsAt50()" classname="com.gildedrose.ExpiredDegradationTest" time="0.001"/>
   <testcase name="backstagePassQualityDropsToZeroWhenExpired()" classname="com.gildedrose.ExpiredDegradationTest" time="0.001"/>
   <testcase name="sulfurasQualityDoesntChangeWhenExpired()" classname="com.gildedrose.ExpiredDegradationTest" time="0.0"/>
-  <testcase name="elixirQualityDoesntDropUnder0WhenExpired()" classname="com.gildedrose.ExpiredDegradationTest" time="0.001"/>
-  <testcase name="agedBrieQualityUpgradeWhenExpired()" classname="com.gildedrose.ExpiredDegradationTest" time="0.0"/>
+  <testcase name="elixirQualityDoesntDropUnder0WhenExpired()" classname="com.gildedrose.ExpiredDegradationTest" time="0.0"/>
+  <testcase name="agedBrieQualityUpgradeWhenExpired()" classname="com.gildedrose.ExpiredDegradationTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

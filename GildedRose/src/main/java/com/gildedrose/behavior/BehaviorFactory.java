@@ -1,4 +1,6 @@
 package com.gildedrose.behavior;
+import java.util.HashMap;
+
 import com.gildedrose.*;
 import com.gildedrose.conjured.*;
 
@@ -22,6 +24,17 @@ public final class BehaviorFactory {
    * Constructeur prive, cree uniquement pour le checkstyle
    *
    */
+
+  private static HashMap<String, Object> behaviorMap;
+  static {
+    behaviorMap = new HashMap<>();
+    behaviorMap.put("+5 Dexte", new DefaultBehavior());
+    behaviorMap.put("Aged Bri", new AgedBrieBehavior());
+    behaviorMap.put("Elixir o", new DefaultBehavior());
+    behaviorMap.put("Sulfuras", new SulfurasBehavior());
+    behaviorMap.put("Backstag", new BackstagePassBehavior());
+    behaviorMap.put("Conjured", new ConjuredBehavior());
+  }
   private BehaviorFactory() {
 
   }
@@ -38,25 +51,11 @@ public final class BehaviorFactory {
    */
   public static Behavior getItemBehavior(Item it) {
     final String str = it.name.substring(0, 8);
-    switch (str) {
-      case "+5 Dexte":
-        return new DefaultBehavior();
-
-      case "Aged Bri":
-        return new AgedBrieBehavior();
-
-      case "Elixir o":
-        return new DefaultBehavior();
-
-      case "Sulfuras":
-        return new SulfurasBehavior();
-      case "Backstag":
-        return new BackstagePassBehavior();
-      case "Conjured":
-        return new ConjuredBehavior();
-      default:
-        break;
+    if(behaviorMap.containsKey((str))) {
+      return (Behavior) behaviorMap.get(str);
     }
-    return new DefaultBehavior();
+    else {
+      return new DefaultBehavior();
+    }
   }
 }
